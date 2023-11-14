@@ -1,0 +1,68 @@
+body {
+  font-family: sans-serif;
+}
+
+/* Large Screen */
+.Navbar {
+  /* width: max-content; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.Navbar h1 {
+  color: #334c8a;
+}
+.Logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: default;
+}
+.Logo img {
+  width: 40px;
+  height: 40px;
+  max-width: 100%;
+}
+.Links {
+  display: flex;
+}
+.Links a {
+  margin: 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 15px;
+}
+.Links a:hover {
+  color: #334c8a;
+}
+.CariMasuk {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.CariMasuk input {
+  width: 180px;
+  height: 30px;
+  text-align: start;
+  padding-left: 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  border: 1px solid #334c8a;
+  color: #334c8a;
+  font-weight: lighter;
+}
+.CariMasuk input:focus {
+  outline: none;
+}
+.CariMasuk a {
+  color: #334c8a;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+input::placeholder {
+  color: #334c8a;
+}
