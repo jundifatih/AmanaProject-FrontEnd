@@ -1,23 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
-import Main from "../../layout/main/Main";
-import LandingPage from "../../pages/main/landingpage/LandingPage";
 
+import dashboardRouter from "./dashboardRouter";
+import mainRouter from "./mainRouter";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Main />,
-    children: [
-      {
-        index: true,
-        element: <LandingPage/>,
-      },
-    //  {
-    //   path: "berita",
-    //   element: <Berita/>
-    //  } 
-    ],
-  },
-]);
+const router = createBrowserRouter([mainRouter, dashboardRouter]);
 
 export default router;
