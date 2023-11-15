@@ -2,8 +2,77 @@
     display: flex;
     justify-content: space-around;
 }
+.Jumbroton{
+    display: flex;
+    justify-content: space-evenly;
+}
 .Background{
     width: 1291px;
     background-color: #334C8A;
     min-height: 549px;
+    border-radius: 40px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 5rem;
+}
+.Alamat{
+    background-color: white;
+    width: 268px;
+    /* height: 26px; */
+    border-radius: 5px;
+    color: #334C8A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    gap: 7px;
+}
+.Alamat .IconLokasi{
+    color:#334C8A;
+}
+.NamaTempat{
+    color: #334C8A;
+    font-size: 11px;
+}
+.Judul{
+    z-index: 4;
+}
+.Judul .Tagline{
+    color: white;
+    font-size: 60px;
+    width: 815px;
+    margin-bottom: 10px;
+}
+.Judul .Deskripsi{
+    color: white;
+    font-size: 17px;
+    width: 547px;
+    margin-bottom: 10px;
+}
+.Tombol{
+    width: 164px;
+    height: 54px;
+    border-radius: 60px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    border: 1px solid white;
+    background: none;
+    cursor: pointer;
+}
+.Tombol:hover{
+    background:white;
+    color: #334C8A;
+}
+.Masjid{
+    z-index: 3;
+    /* float: left; */
+    /* position: absolute; */
+    width: 910px;
+    height: 616px;
+    /* margin-bottom: -23px; */
+    position: absolute;
+    right: 2.3rem;
+    bottom: -12px;
 }

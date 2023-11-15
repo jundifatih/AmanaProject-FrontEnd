@@ -24,7 +24,7 @@ const Navbar = () => {
         <a href="">Tentang Kami</a>
       </div>
       <div className={styles.CariMasuk} id="Cari-Masuk">
-        <input type="text" placeholder="Cari Masjid" />
+        <input type="text" placeholder="Cari Masjid"/>
         <a href="">Masuk</a>
       </div>
         <a className={styles.Icon}>
