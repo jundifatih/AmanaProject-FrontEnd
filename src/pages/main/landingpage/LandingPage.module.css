@@ -1,0 +1,9 @@
+.LandingPage{
+    display: flex;
+    justify-content: space-around;
+}
+.Background{
+    width: 1291px;
+    background-color: #334C8A;
+    min-height: 549px;
+}
