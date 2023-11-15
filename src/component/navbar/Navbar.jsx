@@ -27,9 +27,9 @@ const Navbar = () => {
         <input type="text" placeholder="Cari Masjid" />
         <a href="">Masuk</a>
       </div>
-      {/* <a className="icon" onClick={Menu}>
+        <a className={styles.Icon}>
             <i className="bi bi-list"></i>
-        </a> */}
+        </a>
     </div>
   );
 };

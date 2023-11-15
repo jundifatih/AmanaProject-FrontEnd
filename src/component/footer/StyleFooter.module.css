@@ -59,10 +59,10 @@
         flex-direction: column;
     }
 }
-@media (max-width:768px) {
+/* @media (max-width:768px) {
     
     .FooterList{
         display: flex;
         flex-direction: column;
     }
-}
+} */
