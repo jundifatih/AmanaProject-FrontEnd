@@ -5,6 +5,7 @@
 .Jumbroton{
     display: flex;
     justify-content: space-evenly;
+    position: relative;
 }
 .Background{
     width: 1291px;
@@ -14,6 +15,7 @@
     z-index: 1;
     display: flex;
     align-items: center;
+    position: relative;
     padding-left: 5rem;
 }
 .Alamat{
@@ -67,12 +69,9 @@
 }
 .Masjid{
     z-index: 3;
-    /* float: left; */
-    /* position: absolute; */
     width: 910px;
-    height: 616px;
-    /* margin-bottom: -23px; */
+    height: 650px;
     position: absolute;
     right: 2.3rem;
-    bottom: -12px;
+    bottom: -24px;
 }

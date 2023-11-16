@@ -17,7 +17,7 @@ const LandingPage = () => {
                   yang akan mengubah cara Anda melihat dan mengelola masjid Anda.</p>
                   <button className={styles.Tombol}>Masuk</button>
                 </div>
-                <img src="src/assets/MasjidJumbroton.png" alt="Foto Masjid" className={styles.Masjid} />
+                <img src="src/assets/MasjidJumbroton.png" alt="Foto Masjid" className={styles.Masjid}/>
             </div>
         </div>
     </div>

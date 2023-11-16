@@ -30,6 +30,7 @@ body {
   align-items: center;
 }
 .Links a {
+  cursor: pointer;
   margin: 1rem;
   text-decoration: none;
   color: black;
@@ -39,23 +40,37 @@ body {
 .Links a:hover {
   color: #334c8a;
 }
+.Links .SearchArea1{
+  display: none;
+}
 .CariMasuk {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
-.CariMasuk input {
+.SearchArea{
+  border: 1px solid #334c8a;
+  padding: 0 5px;
+  border-radius: 20px;
+  margin: 0;
+}
+.SearchArea i{
+  color: #334c8a;
+}
+.SearchArea input {
   width: 180px;
   height: 30px;
   text-align: start;
-  padding-left: 10px;
-  border-radius: 20px;
+  padding-left: 5px;
   font-size: 15px;
-  border: 1px solid #334c8a;
+  border: none;
   color: #334c8a;
   font-weight: lighter;
+  cursor: auto;
+  outline: none;
+  background: none;
 }
-.CariMasuk input:focus {
+.SearchArea input:focus {
   outline: none;
 }
 .CariMasuk a {
@@ -73,9 +88,57 @@ input::placeholder {
 }
 
 @media (max-width: 830px) {
+  .Navbar{
+    padding: 1rem;
+    top: fixed;
+  }
   .Links {
     display: none;
+    position: absolute;
+    background-color: #334c8a;
+    top: 50px;
+    left: 0;
+    margin: 10px 1rem;
+    width: 95%;
+    /* color: #334c8a;
+    border: 1px solid #334c8a; */
+    border-radius: 10px;
+    z-index: 100;
   }
+  .Links .List{
+    float: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: white;
+  }
+  .Links .SearchArea1{
+    display:block;
+    /* align-items: center;
+    justify-content: center;  */
+    border: 1px solid #334c8a;
+    padding: 0 5px;
+    border-radius: 20px;
+    background-color: white;
+    margin: 0 1rem;
+  }
+  .Links .SearchArea1 i{
+    color: #334c8a;
+  }
+  .Links .SearchArea1 input {
+    width: 200px;
+    height: 30px;
+    text-align: start;
+    padding-left: 5px;
+    font-size: 15px;
+    border: none;
+    color: #334c8a;
+    font-weight: lighter;
+    cursor: auto;
+    outline: none;
+    background: none;
+  }
+  
   .CariMasuk{
     display: none;
   }

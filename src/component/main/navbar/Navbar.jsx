@@ -1,12 +1,13 @@
 import styles from "./StyleNavbar.module.css";
-// function Menu() {
-//   var x = document.getElementById("Links");
-//   if (x.style.display === "block") {
-//     x.style.display = "none";
-//   } else {
-//     x.style.display = "block";
-//   }
-// }
+function Menu() {
+  // var x = document.getElementsByClassName("#Links, #Cari-Masuk");
+  var x = document.getElementById("Links");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 
 const Navbar = () => {
   return (
@@ -18,16 +19,24 @@ const Navbar = () => {
         </span>
       </div>
       <div className={styles.Links} id="Links">
-        <a href="">Beranda</a>
-        <a href="">Berita</a>
-        <a href="">Acara</a>
-        <a href="">Tentang Kami</a>
+        <a href="" className={styles.List}>Beranda</a>
+        <a href="" className={styles.List}>Berita</a>
+        <a href="" className={styles.List}>Acara</a>
+        <a href="" className={styles.List}>Tentang Kami</a>
+        <div className={styles.SearchArea1}>
+          <i className="bi bi-search" id={styles.IconSearch}></i>
+          <input type="text" placeholder="Cari Masjid"/>
+        </div>
+        <a href="" className={styles.List}>Masuk</a>
       </div>
       <div className={styles.CariMasuk} id="Cari-Masuk">
-        <input type="text" placeholder="Cari Masjid"/>
+        <div className={styles.SearchArea}>
+          <i className="bi bi-search" id={styles.IconSearch}></i>
+          <input type="text" placeholder="Cari Masjid"/>
+        </div>
         <a href="">Masuk</a>
       </div>
-        <a className={styles.Icon}>
+        <a className={styles.Icon} onClick={Menu}>
             <i className="bi bi-list"></i>
         </a>
     </div>
