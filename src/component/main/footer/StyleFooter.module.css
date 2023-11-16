@@ -65,6 +65,24 @@
 .FooterIcon i:hover{
     color: #334C8A;
 }
+
+/* Medium Screen */
+@media (max-width:830px) {
+    .FooterList{
+        display: flex;
+        justify-content:start;
+        /* flex-wrap: wrap; */
+        gap: 2rem;
+    }
+    .FooterItem:nth-child(1){
+        width: 200px ;
+    }
+    .FooterItem:nth-child(4){
+        width: 220px;
+    }
+}
+
+/* Small Screen */
 @media (max-width: 425px) {
     footer{
         max-width: 100%;

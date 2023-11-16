@@ -3,7 +3,7 @@ import styles from "./StyleNavbar.module.css";
 
 const Navbar = () => {
   const [display, setDisplay] = useState(true);
-  const [windowSize, setWindowSize] = useState(0);
+  const [windowSize, setWindowSize] = useState(831);
 
   useEffect(() => {
     function handleResize() {

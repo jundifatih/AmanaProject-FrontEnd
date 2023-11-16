@@ -4,7 +4,6 @@ body {
 
 /* Large Screen */
 .Navbar {
-  /* width: max-content; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,6 +86,7 @@ input::placeholder {
   display: none;
 }
 
+/* Small & Medium Screen */
 @media (max-width: 830px) {
   .Navbar{
     padding: 1rem;
@@ -100,8 +100,8 @@ input::placeholder {
     left: 0;
     margin: 10px 1rem;
     width: 95%;
-    /* color: #334c8a;
-    border: 1px solid #334c8a; */
+    /* color: #334c8a; */
+    border: 1px solid white; 
     border-radius: 10px;
     z-index: 100;
   }

@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-around;
 }
+
+/* Large Screen */
 .Jumbroton {
   display: flex;
   justify-content: space-evenly;
@@ -75,4 +77,54 @@
   position: absolute;
   right: 2.3rem;
   bottom: -24px;
+}
+
+/* Small Screen */
+@media (max-width:428px) {
+  .Masjid {
+    position: absolute;
+    right: 1.3rem;
+    opacity: 0.90;
+    width: 310px;
+    bottom: -25px;
+  }
+  .Jumbroton{
+    margin-top: 0;
+  }
+  .Background{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .Judul{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .Judul .Alamat{
+    position: absolute;
+    top: 15%;
+    left: 2rem;
+
+  }
+  .Judul .Tagline{
+    position: absolute;
+    top: 23%;
+    left: 2rem;
+    font-size: 30px;
+    width: 300px;
+  }
+  .Judul .Deskripsi {
+    position: absolute;
+    top: 43%;
+    font-size: 15px;
+    left: 2rem;
+    width: 270px;
+  }
+  .Judul .Tombol{
+    position: absolute;
+    top: 60%;
+    left: 2rem;
+  }
 }
