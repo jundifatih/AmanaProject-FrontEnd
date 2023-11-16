@@ -1,77 +1,78 @@
-.LandingPage{
-    display: flex;
-    justify-content: space-around;
+.LandingPage {
+  display: flex;
+  justify-content: space-around;
 }
-.Jumbroton{
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
+.Jumbroton {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  overflow: hidden;
 }
-.Background{
-    width: 1291px;
-    background-color: #334C8A;
-    min-height: 549px;
-    border-radius: 40px;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding-left: 5rem;
+.Background {
+  width: 1291px;
+  background-color: #334c8a;
+  min-height: 549px;
+  border-radius: 40px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 5rem;
 }
-.Alamat{
-    background-color: white;
-    width: 268px;
-    /* height: 26px; */
-    border-radius: 5px;
-    color: #334C8A;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    gap: 7px;
+.Alamat {
+  background-color: white;
+  width: 268px;
+  /* height: 26px; */
+  border-radius: 5px;
+  color: #334c8a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  gap: 7px;
 }
-.Alamat .IconLokasi{
-    color:#334C8A;
+.Alamat .IconLokasi {
+  color: #334c8a;
 }
-.NamaTempat{
-    color: #334C8A;
-    font-size: 11px;
+.NamaTempat {
+  color: #334c8a;
+  font-size: 11px;
 }
-.Judul{
-    z-index: 4;
+.Judul {
+  z-index: 4;
 }
-.Judul .Tagline{
-    color: white;
-    font-size: 60px;
-    width: 815px;
-    margin-bottom: 10px;
+.Judul .Tagline {
+  color: white;
+  font-size: 60px;
+  width: 815px;
+  margin-bottom: 10px;
 }
-.Judul .Deskripsi{
-    color: white;
-    font-size: 17px;
-    width: 547px;
-    margin-bottom: 10px;
+.Judul .Deskripsi {
+  color: white;
+  font-size: 17px;
+  width: 547px;
+  margin-bottom: 10px;
 }
-.Tombol{
-    width: 164px;
-    height: 54px;
-    border-radius: 60px;
-    font-size: 17px;
-    font-weight: bold;
-    color: white;
-    border: 1px solid white;
-    background: none;
-    cursor: pointer;
+.Tombol {
+  width: 164px;
+  height: 54px;
+  border-radius: 60px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  border: 1px solid white;
+  background: none;
+  cursor: pointer;
 }
-.Tombol:hover{
-    background:white;
-    color: #334C8A;
+.Tombol:hover {
+  background: white;
+  color: #334c8a;
 }
-.Masjid{
-    z-index: 3;
-    width: 910px;
-    height: 650px;
-    position: absolute;
-    right: 2.3rem;
-    bottom: -24px;
+.Masjid {
+  z-index: 3;
+  width: 910px;
+  height: 650px;
+  position: absolute;
+  right: 2.3rem;
+  bottom: -24px;
 }
