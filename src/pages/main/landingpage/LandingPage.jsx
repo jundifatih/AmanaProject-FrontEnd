@@ -21,12 +21,14 @@ const LandingPage = () => {
     )
   })
 
-  const data2 = DataAcara2.map((item2)=>{
+  const data2 = DataAcara2.map((item)=>{
     return(
-      <Acara2Masjid key= {item2.acara2}
-      acara2 ={item2.acara2}
-      masjid2 ={item2.masjid2}
-      tanggal2 ={item2.tanggal2}
+      <Acara2Masjid key= {item.acara2}
+      acara2 ={item.acara2}
+      masjid2 ={item.masjid2}
+      tanggal2 ={item.tanggal2}
+      tanggalShort = {item.tanggalShort}
+      hari = {item.hari}
       />
     )
   })
@@ -71,7 +73,7 @@ const LandingPage = () => {
                 />
               )
             })} */}
-            {data2[0]}
+            {data2}
           </div>
         </div>
         {/* End Acara Masjid Disekitar */}

@@ -1,7 +1,7 @@
 const DataAcaraMasjid = [
     {
       poster: "src/assets/ImageAcara/MaulidNabi.png",
-      acara : "Halaqoh Tarbiyah",
+      acara : "Maulid Nabi",
       masjid : "Masjid Al-Insan",
       tanggal : "18 September 2023",
       pukul : "20.00 WIB",
@@ -11,7 +11,7 @@ const DataAcaraMasjid = [
     },
     {
       poster: "src/assets/ImageAcara/MaulidNabi.png",
-      acara : "Halaqoh Tarbiyah",
+      acara : "Maulid Nabi",
       masjid : "Masjid Al-Insan",
       tanggal : "18 September 2023",
       pukul : "20.00 WIB",
@@ -21,7 +21,7 @@ const DataAcaraMasjid = [
     },
     {
       poster: "src/assets/ImageAcara/MaulidNabi.png",
-      acara : "Halaqoh Tarbiyah",
+      acara : "Maulid Nabi",
       masjid : "Masjid Al-Insan",
       tanggal : "18 September 2023",
       pukul : "20.00 WIB",
@@ -31,7 +31,7 @@ const DataAcaraMasjid = [
     },
     {
       poster: "src/assets/ImageAcara/MaulidNabi.png",
-      acara : "Halaqoh Tarbiyah",
+      acara : "Maulid Nabi",
       masjid : "Masjid Al-Insan",
       tanggal : "18 September 2023",
       pukul : "20.00 WIB",
@@ -40,7 +40,7 @@ const DataAcaraMasjid = [
     },
     {
       poster: "src/assets/ImageAcara/MaulidNabi.png",
-      acara : "Halaqoh Tarbiyah",
+      acara : "Maulid Nabi",
       masjid : "Masjid Al-Insan",
       tanggal : "18 September 2023",
       pukul : "20.00 WIB",
