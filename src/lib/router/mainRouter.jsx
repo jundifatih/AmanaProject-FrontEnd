@@ -9,10 +9,10 @@ const mainRouter = {
       index: true,
       element: <LandingPage />,
     },
-    //  {
-    //   path: "berita",
-    //   element: <Berita/>
-    //  }
+    {
+      path: "berita",
+      element: <div>Hello Berita</div>
+     },
   ],
 };
 

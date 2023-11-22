@@ -42,6 +42,9 @@ body {
 .Links .SearchArea1{
   display: none;
 }
+.ListMobile{
+  display: none;
+}
 .CariMasuk {
   display: flex;
   gap: 1rem;
@@ -124,6 +127,13 @@ input::placeholder {
   }
   .Links .SearchArea1 i{
     color: #334c8a;
+  }
+  .Links .ListMobile{
+    float: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: white;
   }
   .Links .SearchArea1 input {
     width: 200px;
