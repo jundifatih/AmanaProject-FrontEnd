@@ -1,4 +1,5 @@
 import Dashboard from "../../layout/dashboard";
+import DashboardPage from "../../pages/dashboard/Dashboard/DashboardPage";
 import MosqueAdmins from "../../pages/dashboard/MosqueAdmins";
 import MosqueEvent from "../../pages/dashboard/MosqueEvent";
 import MosqueProfile from "../../pages/dashboard/MosqueProfile";
@@ -11,7 +12,7 @@ const dashboardRouter = {
   children: [
     {
       index: true,
-      element: <div>Dashboard</div>,
+      element: <DashboardPage />,
     },
     {
       path: "profil-pengguna",
