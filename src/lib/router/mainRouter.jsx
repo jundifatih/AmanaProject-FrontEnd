@@ -1,4 +1,5 @@
 import Main from "../../layout/main/Main";
+import Berita from "../../pages/main/berita/Berita";
 import LandingPage from "../../pages/main/landingpage/LandingPage";
 
 const mainRouter = {
@@ -11,7 +12,7 @@ const mainRouter = {
     },
     {
       path: "berita",
-      element: <div>Hello Berita</div>
+      element: <Berita/>
      },
   ],
 };

@@ -1,0 +1,169 @@
+.Berita{
+    margin: 1rem 2rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* Large screen */
+.Image1{
+    width: 950px;
+    height: 481px;
+    max-width: 100%;
+    background-image:linear-gradient(rgba(5, 11, 34, 0.7), rgba(9, 17, 48, 0.7)), url(../../../assets/Al-alqsa2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    color: white;
+    justify-content: end;
+    align-items: start;
+    flex-direction: column;
+    padding: 1rem ;
+}
+.Image1Heading{
+    font-size: 28px;
+}
+.Image1WM{
+    margin-top: 1rem ;
+    margin-bottom: 0;
+    font-size: 12px;
+    display: flex;
+    gap: 1rem;
+}
+.BeritaTerbaru{
+    display: flex;
+    
+}
+.garis{
+    border-bottom: 1px solid black;
+}
+.EtalaseImage2{
+    width: 350px;
+}
+.Image2{
+    width: 400px;
+    height: 240px;
+    max-width: 100%;
+    background-image: url(../../../assets/Jin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    color: white;
+    justify-content: end;
+    align-items: start;
+    flex-direction: column;
+    padding: 1rem ;
+}
+.Image2Heading{
+    font-size: 18px;
+    margin-top: 1.5rem;
+}
+.ImageDesc{
+    margin-top: 1rem ;
+    color: #334C8A;
+    font-size: 20px;
+}
+.Image2WM{
+    margin-top: 1rem ;
+    margin-bottom: 0;
+    font-size: 12px;
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgb(126, 120, 120);
+}
+.PembungkusBerita2{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.EtalaseImage3{
+    width: 455px;
+    
+}
+.BeritaTerbaru{
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.Image3{
+    width: 455px;
+    height: 361px;
+    max-width: 100%;
+    background-image: linear-gradient(rgba(5, 11, 34, 0.7), rgba(9, 17, 48, 0.7)), url(../../../assets/BangsaRum.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    color: white;
+    justify-content: end;
+    align-items: start;
+    flex-direction: column;
+    padding: 1rem ;
+}
+.Image3Heading{
+    font-size: 20px;
+}
+.EtalaseImage4{
+    width: 350px;
+}
+.SedangTrending{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.SedangTrending p{
+    font-weight: bold;
+    font-size: 20px;
+}
+.BtnSedangTrending{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: #334C8A;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.SedangTrending1{
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.SedangTrending1Image{
+    width: 140px;
+    height: 135px;
+    max-width: 100%;
+    object-fit: cover;
+}
+.JudulSedangTrending{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.DeskSedangTrending{
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    color: #334C8A;
+}
+.TanggalPost{
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    font-weight: lighter;
+}
+@media (max-width: 428px) {
+    
+    .Berita{
+        margin: 0 0.7rem;
+    }
+    .Image1{
+        width: 400px;
+    }
+    .EtalaseImage3{
+        width: 350px;
+    }
+    .BeritaBaris2{
+        margin: 0;
+    }
+}
