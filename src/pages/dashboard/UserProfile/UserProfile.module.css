@@ -1,3 +1,61 @@
 .Main {
   background-color: var(--gray);
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.Main .Card {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.Card .CardHeader,
+.Card .CardFooter {
+  background-color: var(--light-gray);
+  display: flex;
+  align-items: bottom;
+  padding: 1rem 2rem 0;
+  gap: 2rem;
+  height: 3rem;
+  font-weight: bold;
+}
+
+.Card .CardFooter {
+  height: auto;
+  padding: 1rem;
+}
+
+.Card .CardBody {
+  padding: 2rem;
+}
+
+.Profile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.Profile small {
+  border: 1px solid var(--main-blue);
+  overflow: hidden;
+  border-radius: 5rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.ProfilePic {
+  margin: auto;
+  width: 80%;
+}
+
+.Row {
+  display: flex;
+  padding: 1rem 0;
+  font-size: 1.2rem;
 }
