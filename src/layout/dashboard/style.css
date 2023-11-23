@@ -1,8 +1,14 @@
+:root {
+  --white: #ffffff;
+  --main-blue: #334c8a;
+  --gray: #e5e9ec;
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 /* For mobile phones: */
 [class*="col-"] {
   width: 100%;
