@@ -7,7 +7,7 @@
 
 /* Large screen */
 .Image1{
-    width: 950px;
+    width: 900px;
     height: 481px;
     max-width: 100%;
     background-image:linear-gradient(rgba(5, 11, 34, 0.7), rgba(9, 17, 48, 0.7)), url(../../../assets/Al-alqsa2.jpg);
@@ -41,7 +41,7 @@
     width: 350px;
 }
 .Image2{
-    width: 400px;
+    width: 350px;
     height: 240px;
     max-width: 100%;
     background-image: url(../../../assets/Jin.png);
@@ -72,24 +72,46 @@
     padding-bottom: 0.5rem;
     border-bottom: 1px solid rgb(126, 120, 120);
 }
+.BeritaBaris2{
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+}
 .PembungkusBerita2{
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 .EtalaseImage3{
-    width: 455px;
-    
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .BeritaTerbaru{
-    font-weight: 500;
+    font-weight: bold;
     margin-bottom: 1rem;
+    color: #000000;
 }
 .Image3{
-    width: 455px;
+    width: 430px;
     height: 361px;
     max-width: 100%;
     background-image: linear-gradient(rgba(5, 11, 34, 0.7), rgba(9, 17, 48, 0.7)), url(../../../assets/BangsaRum.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    color: white;
+    justify-content: end;
+    align-items: start;
+    flex-direction: column;
+    padding: 1rem ;
+}
+.Image4{
+    width: 430px;
+    height: 361px;
+    max-width: 100%;
+    background-image: linear-gradient(rgba(5, 11, 34, 0.7), rgba(9, 17, 48, 0.7)), url(../../../assets/Tauhid.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -112,8 +134,9 @@
     justify-content: space-between;
 }
 .SedangTrending p{
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 20px;
+    color: #000000;
 }
 .BtnSedangTrending{
     font-size: 15px;
@@ -152,18 +175,115 @@
     font-size: 10px;
     font-weight: lighter;
 }
-@media (max-width: 428px) {
-    
+@media (max-width:1250px) {
+    .Image1{
+        width: 550px;
+    }
+    .EtalaseImage3{
+        width: 450px;
+    }
+    .Image3{
+        width: 450px;
+    }
+    .Image4{
+        width: 450px;
+    }
+    .BeritaSedangTrending{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .EtalaseImage4{
+        margin: 1rem 0;
+        width: 900px;
+    }
+    .SedangTrending1{
+        width: 400px;
+        justify-content: start;
+    }
+}
+@media (max-width: 830px) {
+    .Image1{
+        width: 400px;
+    }
+    .EtalaseImage2{
+        width: 275px;
+    }
+    .BeritaSedangTrending{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .EtalaseImage4{
+        margin: 1rem 0;
+        width: 700px;
+    }
+    .SedangTrending{
+        justify-content: start;
+        gap: 3.5rem;
+        display: flex;
+    }
+    .SedangTrending1{
+        width: 300px;
+        justify-content: start;
+    }
+    .BeritaBaris2{
+        display: flex;
+        justify-content: center;
+        margin: o;
+    }
+    .PembungkusBerita2{
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0;
+    }
+    .EtalaseImage3{
+        width: 300px;
+    }
+}
+
+@media (max-width: 430px) {
     .Berita{
         margin: 0 0.7rem;
     }
     .Image1{
         width: 400px;
     }
+    .ImageDesc{
+        font-size: 15px;
+    }
+    .EtalaseImage2{
+        width: 300px;
+        margin: 0 auto;
+    }
     .EtalaseImage3{
-        width: 350px;
+        width: 300px;
+        margin-bottom: 2rem;
+    }
+    .EtalaseImage4{
+        width: 300px;
     }
     .BeritaBaris2{
         margin: 0;
+        flex-wrap: wrap;
+        display: flex;
+        margin: 0 auto;
+    }
+    .BeritaTerbaru{
+        margin: 0 auto;
+        padding-bottom: 1rem;
+    }
+    .PembungkusBerita2{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin: 0 auto;
+    }
+    .SedangTrending{
+        gap: 3rem;
     }
 }

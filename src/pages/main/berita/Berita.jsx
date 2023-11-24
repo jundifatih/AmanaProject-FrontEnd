@@ -36,7 +36,10 @@ const Berita = () => {
             </div>
         </div>
         <div className={styles.BeritaBaris2}>
-            <h1 className={styles.BeritaTerbaru}>Berita Terbaru</h1>
+            <h1 className={styles.BeritaTerbaru}>Berita Terbaru</h1> 
+            {/* <div className={styles.TaglineBeritaTerbaru}>
+                <div className={styles.Garis}></div>
+            </div> */}
             <div className={styles.PembungkusBerita2}>
                 <div  className={styles.EtalaseImage3}>
                     <div className={styles.Image3}>
@@ -59,7 +62,7 @@ const Berita = () => {
                     </div>
                 </div>
                 <div  className={styles.EtalaseImage3}>
-                    <div className={styles.Image3}>
+                    <div className={styles.Image4}>
                         <h2 className={styles.Image3Heading}>
                         Tentang Bangsa Rum yang Khianati Bangsa Islam di Akhir Zaman
                         </h2> 
@@ -89,50 +92,52 @@ const Berita = () => {
                         <Link to="" className={styles.BtnSedangTrending}>Lainnya
                         </Link>
                     </div>
-                    <div className={styles.SedangTrending1}>
-                        <img src="src/assets/JanganPutusAsa.png" alt="" className={styles.SedangTrending1Image}/>
-                        <div>
-                            <p className={styles.JudulSedangTrending}>Jangan Putus Asa, Allah Sebaik-baik Penolong dan Pelindung</p>
-                            <p className={styles.DeskSedangTrending}>Seorang muslim yang beriman tidak boleh berputus asa sebab Allah sebaik-baik penolong dan pelindung.</p>
-                            <div className={styles.TanggalPost}>
-                            <p>By detikHikmah</p>
-                            <p>Sep. 20, 2023</p>
+                    <div className={styles.BeritaSedangTrending}>
+                        <div className={styles.SedangTrending1}>
+                            <img src="src/assets/JanganPutusAsa.png" alt="" className={styles.SedangTrending1Image}/>
+                            <div>
+                                <p className={styles.JudulSedangTrending}>Jangan Putus Asa, Allah Sebaik-baik Penolong dan Pelindung</p>
+                                <p className={styles.DeskSedangTrending}>Seorang muslim yang beriman tidak boleh berputus asa sebab Allah sebaik-baik penolong dan pelindung.</p>
+                                <div className={styles.TanggalPost}>
+                                <p>By detikHikmah</p>
+                                <p>Sep. 20, 2023</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className={styles.SedangTrending1}>
-                        <img src="src/assets/KTTOKI.png" alt="" className={styles.SedangTrending1Image}/>
-                        <div>
-                            <p className={styles.JudulSedangTrending}>Saudi Undang Negara OKI Gelar KTT Islam Luar Biasa, Bahas Kondisi Gaza</p>
-                            <p className={styles.DeskSedangTrending}>Organisasi Kerja Sama Islam (OKI) akan menggelar Konferensi Tingkat Tinggi 
-                            (KTT) Islam bagi negara anggotanya. Konferensi tersebut akan digelar pada Minggu, 12 November 2023 mendatang atas undangan Arab Saudi.</p>
-                            <div className={styles.TanggalPost}>
-                            <p>By detikHikmah</p>
-                            <p>Sep. 18, 2023</p>
+                        <div className={styles.SedangTrending1}>
+                            <img src="src/assets/KTTOKI.png" alt="" className={styles.SedangTrending1Image}/>
+                            <div>
+                                <p className={styles.JudulSedangTrending}>Saudi Undang Negara OKI Gelar KTT Islam Luar Biasa, Bahas Kondisi Gaza</p>
+                                <p className={styles.DeskSedangTrending}>Organisasi Kerja Sama Islam (OKI) akan menggelar Konferensi Tingkat Tinggi 
+                                (KTT) Islam bagi negara anggotanya. Konferensi tersebut akan digelar pada Minggu, 12 November 2023 mendatang atas undangan Arab Saudi.</p>
+                                <div className={styles.TanggalPost}>
+                                <p>By detikHikmah</p>
+                                <p>Sep. 18, 2023</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className={styles.SedangTrending1}>
-                        <img src="src/assets/AnakGaza.png" alt="" className={styles.SedangTrending1Image}/>
-                        <div>
-                            <p className={styles.JudulSedangTrending}>Seruan Anak di Gaza: Kami Tidak Takut, Hasbunallah Wanikmal Wakil</p>
-                            <p className={styles.DeskSedangTrending}>Video yang memperlihatkan keberanian salah seorang anak di Gaza 
-                            dengan melantangkan keimanannya pada Allah SWT viral di media sosial.</p>
-                            <div className={styles.TanggalPost}>
-                            <p>By detikHikmah</p>
-                            <p>Sep. 17, 2023</p>
+                        <div className={styles.SedangTrending1}>
+                            <img src="src/assets/AnakGaza.png" alt="" className={styles.SedangTrending1Image}/>
+                            <div>
+                                <p className={styles.JudulSedangTrending}>Seruan Anak di Gaza: Kami Tidak Takut, Hasbunallah Wanikmal Wakil</p>
+                                <p className={styles.DeskSedangTrending}>Video yang memperlihatkan keberanian salah seorang anak di Gaza 
+                                dengan melantangkan keimanannya pada Allah SWT viral di media sosial.</p>
+                                <div className={styles.TanggalPost}>
+                                <p>By detikHikmah</p>
+                                <p>Sep. 17, 2023</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className={styles.SedangTrending1}>
-                        <img src="src/assets/Haji.jpg" alt="" className={styles.SedangTrending1Image}/>
-                        <div>
-                            <p className={styles.JudulSedangTrending}>RI Dapat Kuota Tambahan Haji 20 Ribu, Begini Detail Pembagiannyaik</p>
-                            <p className={styles.DeskSedangTrending}>Rapat membahas berbagai hal, termasuk tambahan kuota haji untuk tahun 
-                            1445H/2024M. Nantinya, kuota itu akan dibagi ke jemaah haji reguler dan jemaah haji khusus.</p>
-                            <div className={styles.TanggalPost}>
-                            <p>By detikHikmah</p>
-                            <p>Sep. 16, 2023</p>
+                        <div className={styles.SedangTrending1}>
+                            <img src="src/assets/Haji.jpg" alt="" className={styles.SedangTrending1Image}/>
+                            <div>
+                                <p className={styles.JudulSedangTrending}>RI Dapat Kuota Tambahan Haji 20 Ribu, Begini Detail Pembagiannyaik</p>
+                                <p className={styles.DeskSedangTrending}>Rapat membahas berbagai hal, termasuk tambahan kuota haji untuk tahun 
+                                1445H/2024M. Nantinya, kuota itu akan dibagi ke jemaah haji reguler dan jemaah haji khusus.</p>
+                                <div className={styles.TanggalPost}>
+                                <p>By detikHikmah</p>
+                                <p>Sep. 16, 2023</p>
+                                </div>
                             </div>
                         </div>
                     </div>
