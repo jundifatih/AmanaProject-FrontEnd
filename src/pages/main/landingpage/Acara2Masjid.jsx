@@ -13,8 +13,8 @@ const Acara2Masjid = (props) => {
                 <p className={styles.KotakP}>{props.tanggalShort} <br /> <span>{props.hari}</span></p>
             </div>
             <div className={styles.RincianAcara}>
-                <p className={styles.JudulRincian}>{props.acara2}</p>
-                <p className={styles.PenjelasanAcara}>{props.masjid2} | {props.tanggal2}</p>
+                <p className={styles.JudulRincian}>{props.acara}</p>
+                <p className={styles.PenjelasanAcara}>{props.masjid} | {props.tanggal}</p>
             </div>
         </div>
     </div>

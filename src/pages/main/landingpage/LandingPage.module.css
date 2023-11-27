@@ -153,12 +153,20 @@
   position: relative;
   top: 0;
 }
+.PosterAcara{
+  width: 250px;
+  height: auto;
+  max-width: 100%;
+}
+.KeteranganAcara{
+  width: 300px;
+}
 .AcaraUtama{
   margin: 10px 0;
   padding: 1rem;
   display: flex;
   justify-content: start;
-  align-items: center;
+  align-items: start;
   gap: 1rem;
   background-color:white;
   border-radius: 15px;
@@ -271,8 +279,14 @@
 }
 /* medium screen */
 @media (max-width:830px){
+  .AcaraMasjid{
+    align-items: start;
+  }
   .btnLainnya{
     left: 60%;
+  }
+  .KiriAcara{
+    width: 400px;
   }
 }
 /* small screen */
@@ -299,7 +313,7 @@
   .PosterAcara{
     display: flex;
     align-self: flex-start;
-    width: 180px;
+    width: 150px;
     height: auto;
     max-width: 100%;
     margin-top: 1rem;

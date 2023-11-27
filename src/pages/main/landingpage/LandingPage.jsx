@@ -1,6 +1,6 @@
 import Acara2Masjid from "./Acara2Masjid";
 import AcaraMasjid from "./AcaraMasjid";
-import DataAcara2 from "./DataAcara2";
+// import DataAcara2 from "./DataAcara2";
 import DataAcaraMasjid from "./DataAcaraMasjid";
 import styles from "./LandingPage.module.css"
 
@@ -21,17 +21,18 @@ const LandingPage = () => {
     )
   })
 
-  const data2 = DataAcara2.map((item)=>{
+  const data2 = DataAcaraMasjid.map((item)=>{
     return(
-      <Acara2Masjid key= {item.acara2}
-      acara2 ={item.acara2}
-      masjid2 ={item.masjid2}
-      tanggal2 ={item.tanggal2}
+      <Acara2Masjid key= {item.acara}
+      acara ={item.acara}
+      masjid ={item.masjid}
+      tanggal ={item.tanggal}
       tanggalShort = {item.tanggalShort}
       hari = {item.hari}
       />
     )
   })
+  const Filterdata2 = data2.filter((item, index)=> index >= 1 && index <= 4 )
   
   return (
     <div className={styles.LandingPage}>
@@ -73,7 +74,7 @@ const LandingPage = () => {
                 />
               )
             })} */}
-            {data2}
+            {Filterdata2}
           </div>
         </div>
         {/* End Acara Masjid Disekitar */}

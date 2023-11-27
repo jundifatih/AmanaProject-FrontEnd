@@ -11,7 +11,7 @@ const AcaraMasjid = (props) => {
           </div>
           <div className={styles.KeteranganAcara}>
             <h3 className={styles.ChildKeteranganAcara}>{props.acara}</h3>
-            <p className={styles.ChildKeteranganAcara}>{props.masjid} <span>{props.tanggal}</span></p>
+            <p className={styles.ChildKeteranganAcara}>{props.masjid} | <span>{props.tanggal}</span></p>
             <p className={styles.ChildKeteranganAcaraPukul}>{props.pukul}</p>
             <p className={styles.ChildKeteranganAcaraDesk}>{props.deskripsi}</p>
             <Link to="berita">
