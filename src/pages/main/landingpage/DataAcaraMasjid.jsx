@@ -12,7 +12,7 @@ const DataAcaraMasjid = [
   
     },
     {
-      poster: "src/assets/ImageAcara/MaulidNabi.png",
+      poster: "src/assets/ImageAcara/HalaqahTarbiyah.jpg",
       acara : "Halaqoh Tarbiyah",
       masjid : "Masjid Al-Insan",
       tanggal : "Senin, 18 September 2023",
@@ -25,7 +25,7 @@ const DataAcaraMasjid = [
   
     },
     {
-      poster: "src/assets/ImageAcara/MaulidNabi.png",
+      poster: "src/assets/ImageAcara/TablighAkbar.png",
       acara : "Tabligh Akbar",
       masjid : "Masjid Baiturrahim",
       tanggal : "Rabu, 20 September 2023",
@@ -37,7 +37,7 @@ const DataAcaraMasjid = [
       incidunt facilis doloremque consequuntur nostrum odio nam!`,
     },
     {
-      poster: "src/assets/ImageAcara/MaulidNabi.png",
+      poster: "src/assets/ImageAcara/KuliahUmum.png",
       acara : "Kuliah Umum",
       masjid : "Masjid Al-Hidayah",
       tanggal : "Juma`at, 22 September 2023",
@@ -50,7 +50,7 @@ const DataAcaraMasjid = [
       
     },
     {
-      poster: "src/assets/ImageAcara/MaulidNabi.png",
+      poster: "src/assets/ImageAcara/LombaAzan.jpg",
       acara : "Lomba Azan",
       masjid : "Masjid Al-Kautsar",
       tanggal : "Ahad, 24 September 2023",
@@ -62,7 +62,7 @@ const DataAcaraMasjid = [
       incidunt facilis doloremque consequuntur nostrum odio nam!`,
     },
     {
-      poster: "src/assets/ImageAcara/MaulidNabi.png",
+      poster: "src/assets/ImageAcara/NuzululQuran.png",
       acara : "Nuzulul Qur`an",
       masjid : "Masjid An-Nahl",
       tanggal : "Ahad, 24 September 2023",

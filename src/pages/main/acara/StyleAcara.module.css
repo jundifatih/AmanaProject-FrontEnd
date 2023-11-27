@@ -1,0 +1,70 @@
+.Acara{
+    margin: 2rem;
+}
+.Judul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Judul h2{
+    color: #334c8a;
+}
+.Judul button{
+    background-color: #334c8a;
+    color: white;
+    font-weight: 700;
+    border-radius: 20px;
+    border: none;
+    padding: 8px 10px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+.KomponenAcara{
+    margin:1rem 0 ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.CardAcara{
+    width: 400px;
+    gap: 1rem;
+    border-radius: 18px;
+    background: white;
+    filter: drop-shadow(rgb(165, 168, 167) 0 1mm 5px);
+}
+.CardAcara img{
+    width: 400px;
+    height: 215px;
+    max-width: 100%;
+    background-size:cover;
+    border-radius: 18px;
+    background: none;
+}
+.DescAcara{
+    margin: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    
+}
+.Desc1{
+    color: #334c8a;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+.Desc2 p:nth-child(1),p:nth-child(2){
+    margin-bottom: 0.3rem;
+}
+.Desc2 p:nth-child(1){
+    font-weight: bold;
+}
+.Desc2 p:nth-child(2){
+    font-weight: bold;
+    opacity: 0.70;
+}
+@media (max-width:830px) {
+    .CardAcara{
+        width: 335px;
+    }
+}
