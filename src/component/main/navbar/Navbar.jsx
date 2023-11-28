@@ -46,7 +46,7 @@ const Navbar = () => {
         <Link to="/acara" className={styles.List}>
           Acara
         </Link>
-        <Link to="/tentang-kami" className={styles.List}>
+        <Link to="/tentangkami" className={styles.List}>
           Tentang Kami
         </Link>
         <div className={styles.SearchArea1}>

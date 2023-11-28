@@ -1,0 +1,74 @@
+.TentangKami{
+    margin: 2rem;
+}
+.JumbrotonTentangKami{
+    display: flex;
+    align-items: center;
+    background-color: #334c8a;
+    border-radius: 40px;
+    justify-content: center;
+    color: white;
+    padding: 2rem 5rem;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+.JumbrotonTentangKamiKiri h1{
+    margin-bottom: 1.5rem;
+    font-size: 40px;
+}
+.JumbrotonTentangKamiKiri p{
+    font-size: 20px;
+}
+.Fitur{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+.CardFitur{
+    width: 280px;
+    margin-bottom: 20px;
+    height: auto;
+}
+.CardFitur i{
+    color: #334c8a;
+    height: auto;
+    font-size: 25px;
+}
+.CardFitur h4{
+    margin: 12px 0 10px;
+    font-size: 20px;
+}
+.CardFitur p{
+    opacity: 0.60;
+    font-size: 16px;
+}
+/* Tablet / Medium Screen */
+@media (max-width:830px) {
+    .JumbrotonTentangKami{
+        padding: 2rem;
+        justify-content: space-between;
+    }
+}
+
+/* Small Screen */
+@media (max-width:428px) {
+    .JumbrotonTentangKami{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding:2rem ;
+        gap: 1rem;
+    }
+    .JumbrotonTentangKamiKiri h1{
+        margin-bottom: 1.5rem;
+        font-size: 30px;
+    }
+    .JumbrotonTentangKamiKiri p{
+        font-size: 15px;
+    }
+    .JumbrotonTentangKamiKanan img{
+        width: 180px;
+    }
+}

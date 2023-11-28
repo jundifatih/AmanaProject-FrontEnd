@@ -1,9 +1,6 @@
 .Acara{
     margin: 2rem;
 }
-.Jumbroton{
-    display: none;
-}
 .JumbrotonAcara{
     display: flex;
     align-items: center;
@@ -58,8 +55,13 @@
 .Search input::placeholder{
     color: #334c8a;
 }
+.Search input[type="date" ]{
+    color: #334c8a;
+    cursor: pointer;
+}
 .Search input:focus{
     outline: none;
+    color: #334c8a;
 }
 .SearchAcara2{
     display: none;
