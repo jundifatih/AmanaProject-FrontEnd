@@ -1,7 +1,10 @@
 import styles from "./TentangKami.module.css"
 const TentangKami = () => {
   return (
+<>
     <div className={styles.TentangKami}>
+
+        {/* Section Jumbroton Tentang Kami*/}
         <div className={styles.JumbrotonTentangKami}>
             <div className={styles.JumbrotonTentangKamiKiri}>
                 <h1>Tentang Amana</h1>
@@ -13,6 +16,9 @@ const TentangKami = () => {
                 <img src="src/assets/Logo-Amana2.png" alt="" />
             </div>
         </div>
+        {/* End Jumbroton Tentang Kami*/}
+
+        {/* Section Card Fitur*/}
         <div className={styles.Fitur}>
             <div className={styles.CardFitur}>
                 <i className="bi bi-alarm"></i>
@@ -54,9 +60,53 @@ const TentangKami = () => {
                 <h4>User Friendly</h4>
                 <p>Menyajikan user interface yang sesederhana mungkin agar dapat beradaptasi dan dimengerti lebih cepat.</p>
             </div>
-            
+        </div>
+        {/* End Card Fitur*/}
+    </div>
+    
+    {/* Section Tim Kami */}
+    <div className={styles.TimKami}>
+        <h1 className={styles.HeadingTimKami}>Tim Kami</h1>
+        <div className={styles.section}>
+            <div className={styles.box}>
+                <img src="src/assets/ImageTim/Muzaki.png" alt="Hustler"/>
+                <h3>Muzaki Abdullah Irsyad</h3>
+                <h5>Hustler</h5>
+            </div>
+            <div className={styles.box}>
+                <img src="src/assets/ImageTim/Jundi.png" alt="Hacker"/>
+                <h3>Muhammad Amar Dafi</h3>
+                <h5>Hacker</h5>
+            </div>
+            <div className={styles.box}>
+                <img src="src/assets/ImageTim/Jundi.png" alt="Hacker"/>
+                <h3>Muhammad Jundi Fatih</h3>
+                <h5>Hacker</h5>
+            </div>
+            <div className={styles.box}>
+                <img src="src/assets/ImageTim/Jundi.png" alt="Hipster"/>
+                <h3>Muhammad Zaki Ridhwan</h3>
+                <h5>Hipster</h5>
+            </div>
+            <div className={styles.box}>
+                <img src="src/assets/ImageTim/Budiman.png" alt="Hipster"/>
+                <h3>Budiman Cahyadi</h3>
+                <h5>Hispter</h5>
+            </div>
+            <div className={styles.box}>
+                <img src="src/assets/ImageTim/Jundi.png" alt="Hipster"/>
+                <h3>Rahmiyati</h3>
+                <h5>Hispter</h5>
+            </div>
+            <div className={styles.box}>
+                <img src="src/assets/ImageTim/Jundi.png" alt="Hipster"/>
+                <h3>Ardhina Septiani</h3>
+                <h5>Hispter</h5>
+            </div>
         </div>
     </div>
+    {/* EndTim Kami */}
+</>
   )
 }
 
