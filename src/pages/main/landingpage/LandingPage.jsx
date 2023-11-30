@@ -6,7 +6,7 @@ import styles from "./LandingPage.module.css"
 
 const LandingPage = () => {
 
-  // Mapping data dummy acara masjid terdekat (kiri/atas)
+  // Mapping data props acara masjid terdekat (kiri/atas)
   const data = DataAcaraMasjid.map((item)=>{
     return(
     <AcaraMasjid
@@ -21,6 +21,7 @@ const LandingPage = () => {
     )
   })
 
+  // Mapping data props acara masjid terdekat (kanan/bawah)
   const data2 = DataAcaraMasjid.map((item)=>{
     return(
       <Acara2Masjid key= {item.acara}
@@ -32,6 +33,7 @@ const LandingPage = () => {
       />
     )
   })
+  // Filter data props acara masjid terdekat yang hanya menampilkan 4 acara (kanan/bawah)
   const Filterdata2 = data2.filter((item, index)=> index >= 1 && index <= 4 )
   
   return (
@@ -92,6 +94,62 @@ const LandingPage = () => {
           </div>
         </div>
         {/* End Billboard */}
+
+        {/* Section Masjid Terdekat */}
+        <div className={styles.TimKami}>
+          <h1 className={styles.HeadingMasjidTerdekat}>Masjid Terdekat</h1>
+          <div className={styles.section}>
+            <div className={styles.box}>
+                <img src="src/assets/ImageMasjid/Al-Ikhlas2.jpg" alt="Hustler"/>
+                <h4>Masjid Al-Ikhlas</h4>
+                <div className={styles.TombolMasjid}>
+                  <button>Rute</button>
+                  <button>Info</button>
+                </div>
+            </div>
+            <div className={styles.box}>
+                <img src="src/assets/ImageMasjid/Al-Ikhlas2.jpg" alt="Hustler"/>
+                <h4>Masjid Al-Ikhlas</h4>
+                <div className={styles.TombolMasjid}>
+                  <button>Rute</button>
+                  <button>Info</button>
+                </div>
+            </div>
+            <div className={styles.box}>
+                <img src="src/assets/ImageMasjid/Al-Ikhlas2.jpg" alt="Hustler"/>
+                <h4>Masjid Al-Ikhlas</h4>
+                <div className={styles.TombolMasjid}>
+                  <button>Rute</button>
+                  <button>Info</button>
+                </div>
+            </div>
+            <div className={styles.box}>
+                <img src="src/assets/ImageMasjid/Al-Ikhlas2.jpg" alt="Hustler"/>
+                <h4>Masjid Al-Ikhlas</h4>
+                <div className={styles.TombolMasjid}>
+                  <button>Rute</button>
+                  <button>Info</button>
+                </div>
+            </div>
+            <div className={styles.box}>
+                <img src="src/assets/ImageMasjid/Al-Ikhlas2.jpg" alt="Hustler"/>
+                <h4>Masjid Al-Ikhlas</h4>
+                <div className={styles.TombolMasjid}>
+                  <button>Rute</button>
+                  <button>Info</button>
+                </div>
+            </div>
+            <div className={styles.box}>
+                <img src="src/assets/ImageMasjid/Al-Ikhlas2.jpg" alt="Hustler"/>
+                <h4>Masjid Al-Ikhlas</h4>
+                <div className={styles.TombolMasjid}>
+                  <button>Rute</button>
+                  <button>Info</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        {/* End Masjid Terdekat */}
     </div>
   )
 }
