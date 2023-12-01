@@ -480,19 +480,20 @@
 .TombolMasjid{
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 .TombolMasjid button{
   cursor: pointer;
   width: 80px;
-  height: 29px;
+  height: 27px;
   border-radius: 15px;
   font-weight: bold;
-  color: #334c8a;
+  color: white;
   margin: 0.5rem 0;
-  border: none;
-  background-color: white;
+  border:1px solid white;
+  background-color: #334c8a;
 }
+
 /* .box h3{
   margin-bottom: 5px;
 }

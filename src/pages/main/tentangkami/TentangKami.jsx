@@ -99,7 +99,7 @@ const TentangKami = () => {
                 <h5>Hispter</h5>
             </div>
             <div className={styles.box}>
-                <img src="src/assets/ImageTim/Jundi.png" alt="Hipster"/>
+                <img src="src/assets/ImageTim/Ardhina.jpg" alt="Hipster"/>
                 <h3>Ardhina Septiani</h3>
                 <h5>Hispter</h5>
             </div>
