@@ -74,7 +74,7 @@ const TentangKami = () => {
                 <h5>Hustler</h5>
             </div>
             <div className={styles.box}>
-                <img src="src/assets/ImageTim/Jundi.png" alt="Hacker"/>
+                <img src="src/assets/ImageTim/Amar.jpg" alt="Hacker"/>
                 <h3>Muhammad Amar Dafi</h3>
                 <h5>Hacker</h5>
             </div>
@@ -84,7 +84,7 @@ const TentangKami = () => {
                 <h5>Hacker</h5>
             </div>
             <div className={styles.box}>
-                <img src="src/assets/ImageTim/Jundi.png" alt="Hipster"/>
+                <img src="src/assets/ImageTim/Zaki.jpg" alt="Hipster"/>
                 <h3>Muhammad Zaki Ridhwan</h3>
                 <h5>Hipster</h5>
             </div>
@@ -94,7 +94,7 @@ const TentangKami = () => {
                 <h5>Hispter</h5>
             </div>
             <div className={styles.box}>
-                <img src="src/assets/ImageTim/Jundi.png" alt="Hipster"/>
+                <img src="src/assets/ImageTim/Rahmiyati.jpg" alt="Hipster"/>
                 <h3>Rahmiyati</h3>
                 <h5>Hispter</h5>
             </div>
