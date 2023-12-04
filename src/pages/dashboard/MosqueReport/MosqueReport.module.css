@@ -1,0 +1,63 @@
+.Main {
+  background-color: var(--gray);
+  padding: 2rem;
+}
+
+.Breadcrumb {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.Row {
+  display: flex;
+}
+
+.Container {
+  background-color: var(--white);
+  margin-top: 1rem;
+  border-radius: 0.3rem;
+}
+.Header {
+  justify-content: space-between;
+}
+.Header button {
+  border: none;
+  background-color: var(--primary-blue);
+  color: var(--white);
+  padding: 0.4rem 1rem;
+  border-radius: 0.3rem;
+}
+
+.Header button:hover {
+  cursor: pointer;
+}
+
+.Header,
+.Body {
+  padding: 1rem 2rem;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.Body {
+  justify-content: space-between;
+}
+
+.Card {
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  width: 30%;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 0.5rem;
+}
+
+td {
+  height: 1rem;
+}
