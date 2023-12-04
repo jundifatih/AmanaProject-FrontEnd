@@ -1,6 +1,10 @@
 :root {
   --white: #ffffff;
   --main-blue: #334c8a;
+  --primary-blue: #0d6efd;
+  --danger-red: #dc3545;
+  --warning-yellow: #ffc107;
+  --success-green: #198754;
   --gray: #e5e9ec;
   --light-gray: #f2f4f6;
 }
