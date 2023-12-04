@@ -1,0 +1,89 @@
+.Main {
+  background-color: var(--gray);
+  padding: 2rem;
+}
+
+.Breadcrumb {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.Row {
+  display: flex;
+}
+
+.Container {
+  background-color: var(--white);
+  margin-top: 1rem;
+  border-radius: 0.3rem;
+}
+.Header {
+  justify-content: space-between;
+}
+.Header button {
+  border: none;
+  background-color: var(--primary-blue);
+  color: var(--white);
+  padding: 0.4rem 1rem;
+  border-radius: 0.3rem;
+}
+
+.Header button:hover {
+  cursor: pointer;
+}
+
+.Header,
+.Body {
+  padding: 1rem 2rem;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.Body {
+  justify-content: space-around;
+}
+.Card {
+  display: flex;
+  padding: 1rem;
+  overflow: hidden;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+
+.CardBanner .Img {
+  width: 100%;
+}
+
+.CardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.Buttons {
+  justify-content: space-around;
+}
+
+.Buttons button {
+  padding: 0.3rem 1rem;
+  border-radius: 0.2rem;
+  border: none;
+}
+
+.Buttons button:hover {
+  cursor: pointer;
+}
+
+.Success {
+  background-color: var(--success-green);
+  color: var(--white);
+}
+.Primary {
+  background-color: var(--primary-blue);
+  color: var(--white);
+}
+.Danger {
+  background-color: var(--danger-red);
+  color: var(--white);
+}
