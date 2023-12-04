@@ -62,7 +62,7 @@ const Navbar = () => {
           <i className="bi bi-search" id={styles.IconSearch}></i>
           <input type="text" placeholder="Cari Masjid" />
         </div>
-        <Link to="dasbor">Masuk</Link>
+        <Link to="/login">Masuk</Link>
       </div>
       <a
         className={styles.Icon}
