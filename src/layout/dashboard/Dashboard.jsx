@@ -6,7 +6,7 @@ const Dashboard = () => {
   return (
     <>
       <Navbar />
-      <div style={{ height: "100vh", display: "flex" }}>
+      <div style={{ minHeight: "100vh", display: "flex" }}>
         <Sidebar />
         <Outlet />
       </div>
