@@ -18,7 +18,7 @@ const Register = () => {
             <input type="email" placeholder="Masukan email" required/>
             <label htmlFor="password">Password</label>
             <input type="password" placeholder="Masukan password" required />
-            <p>Atau masuk dengan</p>
+            <p>Atau gunakan akun</p>
             <div className={styles.KananIcon}>
               <i className="bi bi-facebook"></i>
               <i className="bi bi-google"></i>
