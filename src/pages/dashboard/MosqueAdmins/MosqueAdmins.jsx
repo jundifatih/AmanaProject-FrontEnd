@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import styles from "./MosqueAdmins.module.css";
 import Image from "../../../assets/Profile.svg";

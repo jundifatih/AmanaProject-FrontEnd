@@ -100,40 +100,40 @@ const LandingPage = () => {
           <h1 className={styles.HeadingMasjidTerdekat}>Masjid Terdekat</h1>
           <div className={styles.section}>
             <div className={styles.box}>
-                <img src="src/assets/ImageMasjid/Al-Ikhlas2.jpg" alt="Hustler"/>
-                <h4>Masjid Al-Ikhlas</h4>
+                <img src="src/assets/ImageMasjid/Al-Insan.jpg" alt="Masjid Al-Insan"/>
+                <h4>Masjid Al-Insan</h4>
                 <div className={styles.TombolMasjid}>
                   <button>Rute</button>
                   <button>Info</button>
                 </div>
             </div>
             <div className={styles.box}>
-                <img src="src/assets/ImageMasjid/Al-Ikhlas2.jpg" alt="Hustler"/>
-                <h4>Masjid Al-Ikhlas</h4>
+                <img src="src/assets/ImageMasjid/Baiturrahim.jpg" alt="Masjid Baiturrahim"/>
+                <h4>Masjid Baiturrahim</h4>
                 <div className={styles.TombolMasjid}>
                   <button>Rute</button>
                   <button>Info</button>
                 </div>
             </div>
             <div className={styles.box}>
-                <img src="src/assets/ImageMasjid/Al-Ikhlas2.jpg" alt="Hustler"/>
-                <h4>Masjid Al-Ikhlas</h4>
+                <img src="src/assets/ImageMasjid/Al-Hidayah.jpg" alt="Masjid Al-Hidayah"/>
+                <h4>Masjid Al-Hidayah</h4>
                 <div className={styles.TombolMasjid}>
                   <button>Rute</button>
                   <button>Info</button>
                 </div>
             </div>
             <div className={styles.box}>
-                <img src="src/assets/ImageMasjid/Al-Ikhlas2.jpg" alt="Hustler"/>
-                <h4>Masjid Al-Ikhlas</h4>
+                <img src="src/assets/ImageMasjid/Al-Kautsar.jpg" alt="Masjid Al-Kautsar"/>
+                <h4>Masjid Al-Kautsar</h4>
                 <div className={styles.TombolMasjid}>
                   <button>Rute</button>
                   <button>Info</button>
                 </div>
             </div>
             <div className={styles.box}>
-                <img src="src/assets/ImageMasjid/Al-Ikhlas2.jpg" alt="Hustler"/>
-                <h4>Masjid Al-Ikhlas</h4>
+                <img src="src/assets/ImageMasjid/An-Nahl.jpg" alt="Masjid An-Nahl"/>
+                <h4>Masjid An-Nahl</h4>
                 <div className={styles.TombolMasjid}>
                   <button>Rute</button>
                   <button>Info</button>

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import styles from "./DashboardPage.module.css";
 import { Link } from "react-router-dom";
@@ -47,23 +48,23 @@ const DashboardPage = () => {
             <div className={` ${styles.CardBody}`}>
               <div className={` ${styles.CardItem}`}>
                 <h3>Laporan Keuangan Mingguan</h3>
-                <small>Jum'at, 24 September 2021 </small>
+                <small>Jum`at, 24 September 2021 </small>
               </div>
               <div className={` ${styles.CardItem}`}>
                 <h3>Laporan Keuangan Mingguan</h3>
-                <small>Jum'at, 17 September 2021 </small>
+                <small>Jum`at, 17 September 2021 </small>
               </div>
               <div className={` ${styles.CardItem}`}>
                 <h3>Laporan Keuangan Mingguan</h3>
-                <small>Jum'at, 10 September 2021 </small>
+                <small>Jum`at, 10 September 2021 </small>
               </div>
               <div className={` ${styles.CardItem}`}>
                 <h3>Laporan Keuangan Mingguan</h3>
-                <small>Jum'at, 03 September 2021 </small>
+                <small>Jum`at, 03 September 2021 </small>
               </div>
               <div className={` ${styles.CardItem}`}>
                 <h3>Laporan Keuangan Bulanan</h3>
-                <small>Jum'at, 03 September 2021 </small>
+                <small>Jum`at, 03 September 2021 </small>
               </div>
             </div>
           </div>
