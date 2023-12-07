@@ -1,0 +1,370 @@
+.InfoMasjid{
+    margin: 2rem;
+}
+.InfoMasjid img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+}
+.ChannelMasjid{
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    bottom: 9rem;
+    color: white;
+}
+.ChannelMasjid h1{
+    font-size: 60px;
+}
+.ChannelMasjid button{
+    font-size: 16px;
+    color: white;
+    background-color: #334C8A;
+    border: none;
+    width: 150px;
+    height: 38px;
+    border-radius: 60px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.Petugas{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    position: absolute;
+    bottom: 0rem;
+    left:4rem;
+    color: white;
+    background-color: #334C8A;
+    width: 1050px;
+    padding: 2rem 2rem;
+    border-radius: 20px;
+}
+
+.PetugasKiri h1{
+    font-size: 35px;
+    margin-bottom: 0.4rem;
+}
+.PetugasKiri p{
+    opacity: 0.60;
+}
+.PetugasKanan{
+    display: flex;
+    gap: 2rem;
+    
+}
+.PetugasKanan .PetugasRole{
+    font-size: 20px;
+    margin-bottom: 3px;
+    opacity: 0.60;
+}
+.PetugasKanan .PetugasNama{
+    font-size: 22px;
+    font-weight: bold;
+}
+.Daftar{
+    display: flex;
+    align-items: center;
+    /* margin-left: 2rem; */
+    margin-top: 4rem;
+    gap: 5rem;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+.DaftarImam table thead{
+    background-color: #334C8A;
+    color: white;
+}
+.DaftarImam table tbody tr td:nth-child(1){
+    text-align: center;
+}
+.DaftarImam table tbody tr td:nth-child(2){
+    width: 300px;
+}
+.DaftarPengurus table thead{
+    background-color: #334C8A;
+    color: white;
+}
+.DaftarPengurus table tbody tr td:nth-child(1){
+    text-align: center;
+}
+.DaftarPengurus table tbody tr td:nth-child(2){
+    width: 300px;
+}
+.Laporan{
+    margin-top: 1rem;
+}
+.KomponenLaporan{
+    margin:0.5rem 1rem ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: start;
+}
+.CardLaporan{
+    width: 285px;
+    padding: 1rem;
+    background: white;
+    filter: drop-shadow(rgb(165, 168, 167) 0 1mm 5px);
+}
+.JudulLaporan{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 0.3rem;
+}
+.TangalLaporan{
+    font-size: 18px;
+    color: black;
+    opacity: 0.70;
+    margin-bottom: 0.5rem;
+}
+.SaldoLaporan{
+    font-size: 28px;
+    font-weight: bold;
+    color: #334C8A;
+}
+.TabelLaporan{
+    display: flex;
+    overflow: auto;
+    scroll-behavior: smooth;
+    margin-top: 1.5rem;
+    background: white;
+    filter: drop-shadow(rgb(165, 168, 167) 0 1mm 5px);
+}
+
+.TabelLaporan::-webkit-scrollbar{
+    height: 4px;
+    border-radius: 10px;
+    background: transparent;
+}
+.TabelLaporan::-webkit-scrollbar-thumb{
+    background:#334C8A;
+}
+.TabelLaporan table{
+    width: 100%;
+}
+.TabelLaporan table thead td{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #334C8A;
+}
+.nomor{
+    width: 50px;
+    text-align: center;
+}
+.HariTanggal{
+    width: 100px;
+    text-align: start;
+}
+.Uraian{
+    width: 200px;
+}
+.Uang{
+    width: 200px;
+}
+.Keterangan{
+    width: 400px;
+}
+.Acara{
+    margin-top: 1rem;
+}
+.HeadingAcara{
+    font-size: 28px; 
+    color: #334C8A;   
+}
+.KomponenAcara{
+    margin:0.5rem 0rem ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.CardAcara{
+    width: 400px;
+    gap: 1rem;
+    border-radius: 18px;
+    background: white;
+    filter: drop-shadow(rgb(165, 168, 167) 0 1mm 5px);
+}
+.CardAcara img{
+    width: 400px;
+    height: 215px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+    background: none;
+}
+.DescAcara{
+    margin: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    
+}
+.Desc1{
+    color: #334c8a;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+.Desc2 p:nth-child(1),p:nth-child(2){
+    margin-bottom: 0.3rem;
+}
+.Desc2 p:nth-child(1){
+    font-weight: bold;
+}
+.Desc2 p:nth-child(2){
+    font-weight: bold;
+    opacity: 0.50;
+}
+@media (max-width:1300px) {
+    .ChannelMasjid{
+        position: inherit !important;
+        margin: 1.5rem 0 0.5rem 0;
+        color: #334C8A;
+    }
+    .ChannelMasjid h1{
+        font-size: 40px;
+    }
+    .Petugas{
+        position: inherit !important;
+        margin: 0 0 1.5rem 0;
+        width: 960px;
+        gap: 4rem;
+    }
+    .PetugasKiri h1{
+        font-size: 25px;
+        margin-bottom: 0.4rem;
+    }
+    .PetugasKanan .PetugasRole{
+        font-size: 16px;
+        margin-bottom: 3px;
+        opacity: 0.60;
+    }
+    .PetugasKanan .PetugasNama{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .Daftar{
+        margin-top: 1.5rem;
+        gap: 1rem;
+    }
+    .DaftarImam table tbody tr td:nth-child(2){
+        width: 250px;
+    }
+    .DaftarPengurus table tbody tr td:nth-child(2){
+        width: 250px;
+    }
+}
+@media (max-width:830px) {
+    .ChannelMasjid{
+        position: inherit !important;
+        margin: 1.5rem 0 0.5rem 0;
+        color: #334C8A;
+    }
+   
+    .Petugas{
+        position: inherit !important;
+        width: 700px;
+        margin: 0 0 1.5rem 0;
+        gap: 4rem;
+    }
+    .Daftar{
+        justify-content: start;
+    }
+    .DaftarImam h1{
+        font-size: 23px;
+    }
+    .DaftarPengurus h1{
+        font-size: 23px;
+    }
+    .DaftarImam table tbody tr td:nth-child(2){
+        width: 185px;
+    }
+    .DaftarPengurus table tbody tr td:nth-child(2){
+        width: 185px;
+    }
+    .KomponenLaporan{
+        margin: 0.5rem 0;
+    }
+    .CardAcara{
+        width: 300px;
+    }
+    .CardAcara img{
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media (max-width:428px) {
+    .InfoMasjid{
+        margin: 0.5rem 2rem;
+    }
+    .InfoMasjid img{
+        border-radius: 10px;
+    }
+    .ChannelMasjid{
+        justify-content: space-between;
+    }
+    .ChannelMasjid h1{
+        font-size: 23px;
+        
+    }
+    .ChannelMasjid button{
+        font-size: 13px;
+        width: 100px;
+        height: 30px;
+        border-radius: 40px;
+    }
+    .Petugas{
+        width: 300px;
+        gap: 1.8rem;
+        align-items: start;
+    }
+    .PetugasKiri h1{
+        font-size: 20px;
+    }
+    .PetugasKiri p{
+        font-size: 14px;
+    }
+    .PetugasKanan{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .PetugasKanan .PetugasRole{
+        font-size: 14px;
+    }
+    .PetugasKanan .PetugasNama{
+        font-size: 16px;
+    }
+    .HeadingImam{
+        font-size: 18px;
+    }
+}
+@media (max-width:350px) {
+    .ChannelMasjid h1{
+        font-size: 18px;
+    }
+    .Petugas{
+        width: 260px;
+        
+    }
+    .PetugasKiri h1{
+        font-size: 18px;
+    }
+    .PetugasKiri p{
+        font-size: 14px;
+    }
+    .PetugasKanan .PetugasRole{
+        font-size: 12px;
+    }
+    .PetugasKanan .PetugasNama{
+        font-size: 14px;
+    }
+}

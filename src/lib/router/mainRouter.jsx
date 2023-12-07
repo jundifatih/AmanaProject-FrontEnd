@@ -1,6 +1,7 @@
 import Main from "../../layout/main/Main";
 import Acara from "../../pages/main/acara/Acara";
 import Berita from "../../pages/main/berita/Berita";
+import InfoMasjid from "../../pages/main/infomasjid/InfoMasjid";
 import LandingPage from "../../pages/main/landingpage/LandingPage";
 import TentangKami from "../../pages/main/tentangkami/TentangKami";
 
@@ -23,6 +24,10 @@ const mainRouter = {
     {
       path: "tentangkami",
       element: <TentangKami/>,
+     },
+    {
+      path: "infomasjid",
+      element: <InfoMasjid/>,
      },
   ],
 };

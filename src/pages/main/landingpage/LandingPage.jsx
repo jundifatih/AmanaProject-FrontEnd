@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
 import Acara2Masjid from "./Acara2Masjid";
 import AcaraMasjid from "./AcaraMasjid";
 // import DataAcara2 from "./DataAcara2";
 import DataAcaraMasjid from "./DataAcaraMasjid";
 import styles from "./LandingPage.module.css"
+import MasjidTerdekat from "./MasjidTerdekat";
 
 const LandingPage = () => {
 
@@ -35,6 +37,17 @@ const LandingPage = () => {
   })
   // Filter data props acara masjid terdekat yang hanya menampilkan 4 acara (kanan/bawah)
   const Filterdata2 = data2.filter((item, index)=> index >= 1 && index <= 4 )
+
+  // Mapping data props komponen Masjid Terdekat
+  const Mosque =DataAcaraMasjid.map((item)=>{
+    return(
+      <MasjidTerdekat 
+      key = {item.image}
+      image ={item.image} 
+      masjid ={item.masjid}
+      />
+    )
+  })
   
   return (
     <div className={styles.LandingPage}>
@@ -52,7 +65,9 @@ const LandingPage = () => {
                   <h1 className={styles.Tagline}>Informasi Masjid dalam Gengaman Anda.</h1>
                   <p className={styles.Deskripsi}>Kami dengan bangga memperkenalkan sebuah inovasi 
                   yang akan mengubah cara Anda melihat dan mengelola masjid Anda.</p>
-                  <button className={styles.Tombol}>Masuk</button>
+                  <Link to="login">
+                    <button className={styles.Tombol}>Masuk</button>
+                  </Link>
                 </div>
                 <img src="src/assets/MasjidJumbroton.png" alt="Foto Masjid" className={styles.Masjid}/>
             </div>
@@ -66,7 +81,9 @@ const LandingPage = () => {
               {data[0]}
           </div>
           <div className={styles.KananAcara}>
-            <button className={styles.btnLainnya}>Lainnya</button>
+            <Link to="acara">
+              <button className={styles.btnLainnya}>Lainnya</button>
+            </Link>
             {/* {DataAcara2.map((item2)=>{
               return(
                 <Acara2Masjid key= {item2.acara2}
@@ -99,54 +116,7 @@ const LandingPage = () => {
         <div className={styles.TimKami}>
           <h1 className={styles.HeadingMasjidTerdekat}>Masjid Terdekat</h1>
           <div className={styles.section}>
-            <div className={styles.box}>
-                <img src="src/assets/ImageMasjid/Al-Insan.jpg" alt="Masjid Al-Insan"/>
-                <h4>Masjid Al-Insan</h4>
-                <div className={styles.TombolMasjid}>
-                  <button>Rute</button>
-                  <button>Info</button>
-                </div>
-            </div>
-            <div className={styles.box}>
-                <img src="src/assets/ImageMasjid/Baiturrahim.jpg" alt="Masjid Baiturrahim"/>
-                <h4>Masjid Baiturrahim</h4>
-                <div className={styles.TombolMasjid}>
-                  <button>Rute</button>
-                  <button>Info</button>
-                </div>
-            </div>
-            <div className={styles.box}>
-                <img src="src/assets/ImageMasjid/Al-Hidayah.jpg" alt="Masjid Al-Hidayah"/>
-                <h4>Masjid Al-Hidayah</h4>
-                <div className={styles.TombolMasjid}>
-                  <button>Rute</button>
-                  <button>Info</button>
-                </div>
-            </div>
-            <div className={styles.box}>
-                <img src="src/assets/ImageMasjid/Al-Kautsar.jpg" alt="Masjid Al-Kautsar"/>
-                <h4>Masjid Al-Kautsar</h4>
-                <div className={styles.TombolMasjid}>
-                  <button>Rute</button>
-                  <button>Info</button>
-                </div>
-            </div>
-            <div className={styles.box}>
-                <img src="src/assets/ImageMasjid/An-Nahl.jpg" alt="Masjid An-Nahl"/>
-                <h4>Masjid An-Nahl</h4>
-                <div className={styles.TombolMasjid}>
-                  <button>Rute</button>
-                  <button>Info</button>
-                </div>
-            </div>
-            <div className={styles.box}>
-                <img src="src/assets/ImageMasjid/Al-Ikhlas2.jpg" alt="Hustler"/>
-                <h4>Masjid Al-Ikhlas</h4>
-                <div className={styles.TombolMasjid}>
-                  <button>Rute</button>
-                  <button>Info</button>
-                </div>
-            </div>
+            {Mosque}
           </div>
         </div>
         {/* End Masjid Terdekat */}
