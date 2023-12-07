@@ -14,7 +14,7 @@ const AcaraMasjid = (props) => {
             <p className={styles.ChildKeteranganAcara}>{props.masjid} | <span>{props.tanggal}</span></p>
             <p className={styles.ChildKeteranganAcaraPukul}>{props.pukul}</p>
             <p className={styles.ChildKeteranganAcaraDesk}>{props.deskripsi}</p>
-            <Link to="">
+            <Link to="detailacara">
             <button className={styles.btnDetail}>Lihat Detailnya</button>
             </Link>
           </div>

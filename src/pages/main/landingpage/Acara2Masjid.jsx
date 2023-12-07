@@ -1,12 +1,13 @@
 /* eslint-disable react/prop-types */
+import { Link } from "react-router-dom"
 import styles from "./LandingPage.module.css"
 // acara2, masjid2, tanggal2
 
 const Acara2Masjid = (props) => {
-    
     // const {acara2, masjid2, tanggal2} = props;
   return (
-    <>
+    <div className={styles.KomponenAcaraPendek}>
+    <Link to="detailacara">
     <div className={styles.AcaraPendek}>
         <div className={styles.SekilasAcara}>
             <div className={styles.KotakTanggal}>
@@ -18,7 +19,8 @@ const Acara2Masjid = (props) => {
             </div>
         </div>
     </div>
-    </>
+    </Link>
+    </div>
   )
 }
 

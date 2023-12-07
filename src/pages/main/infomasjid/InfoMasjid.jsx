@@ -24,7 +24,7 @@ const InfoMasjid = () => {
             </div>
             <div>
               <p className={styles.PetugasRole}>Bilal</p>
-              <p className={styles.PetugasNama}>Ustadz Fuad</p>
+              <p className={styles.PetugasNama}>Ustadz Hasyim</p>
             </div>
           </div>
         </div>
