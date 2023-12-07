@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./InfoMasjid.module.css"
 
 const InfoMasjid = () => {
@@ -6,7 +7,9 @@ const InfoMasjid = () => {
         <img src="src/assets/ImageMasjid/Al-Insan.jpg" alt="Masjid Al-Insan" />
         <div className={styles.ChannelMasjid}>
           <h1>Masjid Al-Insan</h1>
-          <button>Rute</button>
+          <Link to="/rute">
+            <button>Rute</button>
+          </Link>
         </div>
         <div className={styles.Petugas}>
           <div className={styles.PetugasKiri}>
@@ -183,7 +186,9 @@ const InfoMasjid = () => {
           <h1 className={styles.HeadingAcara}>Acara Masjid</h1>
           <div className={styles.KomponenAcara}>
             <div className={styles.CardAcara}>
+            <Link to="/detailacara">
               <img src="src/assets/ImageAcara/MaulidNabi.png" alt="poster" />
+            </Link>
               <div className={styles.DescAcara}>
                   <div className={styles.Desc1}>
                       <p>18 Sep</p>
@@ -196,7 +201,9 @@ const InfoMasjid = () => {
               </div>
             </div>
             <div className={styles.CardAcara}>
+              <Link to="/detailacara">
               <img src="src/assets/ImageAcara/MaulidNabi.png" alt="poster" />
+              </Link>
               <div className={styles.DescAcara}>
                   <div className={styles.Desc1}>
                       <p>18 Sep</p>
@@ -209,7 +216,9 @@ const InfoMasjid = () => {
               </div>
             </div>
             <div className={styles.CardAcara}>
+              <Link to="/detailacara">
               <img src="src/assets/ImageAcara/MaulidNabi.png" alt="poster" />
+              </Link>
               <div className={styles.DescAcara}>
                   <div className={styles.Desc1}>
                       <p>18 Sep</p>
@@ -222,7 +231,9 @@ const InfoMasjid = () => {
               </div>
             </div>
             <div className={styles.CardAcara}>
+              <Link to="/detailacara">
               <img src="src/assets/ImageAcara/MaulidNabi.png" alt="poster" />
+              </Link>
               <div className={styles.DescAcara}>
                   <div className={styles.Desc1}>
                       <p>18 Sep</p>
@@ -235,7 +246,9 @@ const InfoMasjid = () => {
               </div>
             </div>
             <div className={styles.CardAcara}>
+              <Link to="/detailacara">
               <img src="src/assets/ImageAcara/MaulidNabi.png" alt="poster" />
+              </Link>
               <div className={styles.DescAcara}>
                   <div className={styles.Desc1}>
                       <p>18 Sep</p>
@@ -248,7 +261,9 @@ const InfoMasjid = () => {
               </div>
             </div>
             <div className={styles.CardAcara}>
+              <Link to="/detailacara">
               <img src="src/assets/ImageAcara/MaulidNabi.png" alt="poster" />
+              </Link>
               <div className={styles.DescAcara}>
                   <div className={styles.Desc1}>
                       <p>18 Sep</p>

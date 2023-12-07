@@ -1,0 +1,70 @@
+.Firstpage{
+    display: flex;
+    justify-content: center;
+}
+.formfirst{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: white;
+    color: #334C8A;
+    width: 500px;
+    padding: 1.5rem;
+    border-radius: 20px;
+    filter: drop-shadow(rgb(165, 168, 167) 0 1mm 5px);
+}
+.headfirst{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+.warning{
+    color: red;
+    text-align: start;
+    font-size: 12px;
+    font-weight: lighter;
+    margin-bottom: 0.6rem;
+}
+.FirstForm form label{
+    font-size: 16px;
+    margin-bottom: 0.3rem;
+}
+.inputfirst{
+    margin-bottom: 1rem;
+    width: 300px;
+    height: 30px;
+    border: 1px solid #334C8A;
+}
+.inputfile{
+    margin-bottom: 1rem;
+}
+.buttonfirst{
+    width: 130px;
+    height: 30px;
+    background-color: #334C8A;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+@media (max-width:550px) {
+    .formfirst{
+        width: 350px;
+    }
+}
+@media (max-width:350px) {
+    .formfirst{
+        width: 250px;
+    }
+    .inputfirst{
+        width:220px;
+    }
+}

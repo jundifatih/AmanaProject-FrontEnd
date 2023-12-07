@@ -22,7 +22,7 @@ const Login = () => {
               <i className="bi bi-google"></i>
               <i className="bi bi-twitter-x"></i>
             </div>
-            <Link to="/dasbor">
+            <Link to="/firstform">
               <button type="submit">Masuk</button>
             </Link>
             <p>Dengan masuk kamu menyetujui <span>Syarat & Ketentuan</span> dan <span>Kebijakan Privasi</span> Amana</p>

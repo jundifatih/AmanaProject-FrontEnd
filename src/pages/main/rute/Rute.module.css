@@ -1,0 +1,62 @@
+.rute{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0;
+}
+.ProfilMasjid{
+    width: 400px;
+    flex-basis: 20%;
+}
+.ImageMasjid img{
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+}
+.DescMasjid{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.DescMasjid h1{
+    color: #334C8A;
+}
+.DescMasjid button{
+    background-color: #334C8A;
+    border: none;
+    padding: 5px 0;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.maps iframe{
+    width: 965px;
+    height: 637px;
+}
+@media (max-width:650px) {
+    .rute{
+        flex-wrap: wrap-reverse;
+        gap: 0;
+    }
+    
+}
+@media (max-width:428px) {
+    .maps iframe{
+        width: 425px;
+    }
+    .ImageMasjid img{
+        width: 425px;
+    }
+}
+@media (max-width:400px) {
+    .maps iframe{
+        width: 355px;
+    }
+    .ImageMasjid img{
+        width: 355px;
+    }
+}

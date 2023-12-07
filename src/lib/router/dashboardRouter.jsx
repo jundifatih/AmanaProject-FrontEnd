@@ -8,7 +8,7 @@ import UserProfile from "../../pages/dashboard/UserProfile";
 
 const dashboardRouter = {
   path: "/dasbor",
-  element: <Dashboard />,
+  element: <Dashboard/>,
   children: [
     {
       index: true,

@@ -8,7 +8,9 @@ const MasjidTerdekat = (props) => {
         <img src={props.image} alt={props.masjid}/>
         <h4>{props.masjid}</h4>
         <div className={styles.TombolMasjid}>
-            <button>Rute</button>
+            <Link to="rute">
+              <button>Rute</button>
+            </Link>
             <Link to="infomasjid">
                 <button>Info</button>
             </Link>
