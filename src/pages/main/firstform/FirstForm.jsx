@@ -5,6 +5,7 @@ const FirstForm = () => {
   return (
   <>
     <div className={styles.Firstpage}>
+      {/* <img src="src/assets/Logo-Amana2.png" alt="" /> */}
       <div className={styles.FirstForm}>
         <form action="" className={styles.formfirst}>
         <p className={styles.headfirst}>Lengkapi data di bawah ini!</p>
@@ -26,6 +27,7 @@ const FirstForm = () => {
         </Link>
         </form>
       </div>
+      <p className={styles.copyright}>Amana Copyright 2023.</p>
     </div>
   </>
   )
