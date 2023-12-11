@@ -8,11 +8,17 @@ import Files from "../../../assets/icons/Files";
 import Person from "../../../assets/icons/Person";
 import Logout from "../../../assets/icons/Logout";
 import FourPeople from "../../../assets/icons/FourPeople";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Dashboard from "../../../assets/icons/Dashboard";
 
 const Sidebar = () => {
   const pathname = useLocation().pathname;
+  const navigate = useNavigate();
+  const handleLogout = () => {
+    console.log("run");
+    localStorage.removeItem("Authorization");
+    navigate("/");
+  };
   return (
     <aside className={`col-2 ${styles.Aside}`}>
       <div className={styles.User}>
@@ -116,10 +122,10 @@ const Sidebar = () => {
           <Person />
           Profil Pengguna
         </Link>
-        <Link to="/" className={`${styles.NavItem}`}>
+        <div onClick={handleLogout} className={`${styles.NavItem}`}>
           <Logout />
           Logout
-        </Link>
+        </div>
       </div>
     </aside>
   );
