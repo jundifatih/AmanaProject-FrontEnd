@@ -37,6 +37,9 @@
   text-decoration: none;
 }
 
+.NavItem:hover {
+  cursor: pointer;
+}
 .NavItem svg {
   transform: scale(1.5);
 }
