@@ -60,7 +60,7 @@ const InfoMasjid = () => {
             </table>
           </div>
           <div className={styles.DaftarPengurus}>
-            <h1 className={styles.HeadingAcara}>Daftar Pengurus Masjid</h1>
+            <h1 className={styles.HeadingAcara}>Daftar Organisasi Masjid</h1>
             <table>
               <thead>
                 <th>No</th>
@@ -183,7 +183,7 @@ const InfoMasjid = () => {
           </div>
         </div>
         <div className={styles.Acara}>
-          <h1 className={styles.HeadingAcara}>Acara Masjid</h1>
+          <h1 className={styles.HeadingAcara4}>Acara Masjid</h1>
           <div className={styles.KomponenAcara}>
             <div className={styles.CardAcara}>
             <Link to="/detailacara">

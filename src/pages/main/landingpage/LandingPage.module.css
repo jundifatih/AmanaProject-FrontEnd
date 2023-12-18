@@ -15,7 +15,7 @@
   width: 1291px;
   background-color: #334c8a;
   min-height: 549px;
-  border-radius: 40px;
+  border-radius: 20px;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -140,7 +140,7 @@
   align-items: center;
   /* background-color: #8a8933; */
   justify-content: space-between;
-  gap: 2rem;
+  gap: 0.5rem;
 }
 .KiriAcara{
   padding: 10px 10px;
@@ -381,12 +381,12 @@
 /* Divition Billboard */
 .Billboard{
   display: flex;
-  margin: 1rem 1rem;
+  margin: 1rem 2rem;
   background-color: #334c8a;
   padding: 3rem;
   color: white;
   align-items:center;
-  border-radius: 40px;
+  border-radius: 20px;
 }
 .Billboard1 p{
   font-size: 30px;
@@ -405,7 +405,8 @@
     /* flex-wrap: wrap; */
     justify-content: center;
     padding: 1rem;
-    border-radius: 20px;
+    border-radius: 10px;
+    margin: 0.5rem 1rem;
   }
   .Billboard1 p{
     font-size: 10px;
@@ -436,13 +437,13 @@
 /* Masjid Terdekat */
 .TimKami{
   background-color: white;
-  padding: 2rem 2rem;
+  padding: 0 2rem;
 }
 .HeadingMasjidTerdekat{
-  font-size: 40px;
+  /* font-size: 40px; */
   color:#334c8a;
   text-align: start;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 .section::-webkit-scrollbar{
   height: 4px;
@@ -497,7 +498,14 @@
   border:1px solid white;
   background-color: #334c8a;
 }
-
+@media (max-width:428px) {
+  .HeadingMasjidTerdekat{
+    text-align: center;
+  }
+  .TimKami{
+    padding: 0 1rem;
+  }
+}
 /* .box h3{
   margin-bottom: 5px;
 }

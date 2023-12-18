@@ -27,7 +27,7 @@ const Register = () => {
       <div className={styles.Kanan}>
         <h1>Buat Akun</h1>
         <div className={styles.KananForm}>
-          <label htmlFor="email">Nama Lengkap</label>
+          <label htmlFor="email">Nama Masjid</label>
           <input type="email" placeholder="Masukan nama lengkap" required />
           <label htmlFor="email">Email</label>
           <input type="email" placeholder="Masukan email" required />

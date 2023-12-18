@@ -1,11 +1,12 @@
 .Acara{
-    margin: 2rem;
+    margin: 0rem;
+    padding: 1rem;
 }
 .JumbrotonAcara{
     display: flex;
     align-items: center;
     background-color: #334c8a;
-    border-radius: 40px;
+    border-radius: 20px;
     justify-content: center;
     color: white;
     padding: 2rem 5rem;
@@ -90,7 +91,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: center;
+    justify-content: space-between;
 }
 .CardAcara{
     width: 400px;
@@ -187,6 +188,9 @@
         background-size:cover;
         border-radius: 18px;
         background: none; */
+    }
+    .KomponenAcara{
+        justify-content: center;
     }
 }
 

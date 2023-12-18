@@ -1,5 +1,5 @@
 .InfoMasjid{
-    margin: 2rem;
+    margin: 1rem;
 }
 .InfoMasjid img{
     width: 100%;
@@ -44,6 +44,7 @@
     width: 1050px;
     padding: 2rem 2rem;
     border-radius: 20px;
+    
 }
 
 .PetugasKiri h1{
@@ -70,9 +71,9 @@
 .Daftar{
     display: flex;
     align-items: center;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
     margin-top: 4rem;
-    gap: 5rem;
+    gap: 3rem;
     justify-content: start;
     flex-wrap: wrap;
 }
@@ -98,7 +99,7 @@
 }
 .Laporan{
     margin-top: 1rem;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
 }
 .KomponenLaporan{
     margin-top:0.5rem;
@@ -176,11 +177,17 @@
 }
 .Acara{
     margin-top: 1rem;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
 }
 .HeadingAcara{
     font-size: 28px; 
-    color: #334C8A;   
+    color: #334C8A;
+    margin-bottom: 0.3rem;   
+}
+.HeadingAcara4{
+    font-size: 28px; 
+    color: #334C8A;
+    margin-bottom: 0.3rem;   
 }
 .KomponenAcara{
     margin-top:0.5rem;
@@ -192,14 +199,14 @@
     justify-content: start;
 }
 .CardAcara{
-    width: 395px;
+    width: 415px;
     gap: 1rem;
     border-radius: 18px;
     background: white;
     filter: drop-shadow(rgb(165, 168, 167) 0 1mm 5px);
 }
 .CardAcara img{
-    width: 400px;
+    width: 415px;
     height: 215px;
     max-width: 100%;
     object-fit: cover;
@@ -256,10 +263,12 @@
         font-size: 18px;
         font-weight: bold;
     }
+    
     .Daftar{
         margin-top: 1.5rem ;
         margin-left: 0;
         gap: 1rem;
+        justify-content: center;
     }
     .DaftarImam table tbody tr td:nth-child(2){
         width: 250px;
@@ -273,22 +282,38 @@
     .Acara{
         margin-left: 0;
     }
+    .HeadingAcara4{
+        text-align: center;
+    }
+    .KomponenAcara{
+        justify-content: center;
+    }
+    .KomponenLaporan{
+        margin: 0.5rem 0;
+        justify-content: center;
+    }
+    .HeadingAcara{
+        text-align: center;
+    }
 }
 @media (max-width:830px) {
     .ChannelMasjid{
         position: inherit !important;
         margin: 1.5rem 0 0.5rem 0;
         color: #334C8A;
+        justify-content: center;
     }
-   
     .Petugas{
         position: inherit !important;
-        width: 700px;
+        width: 735px;
         margin: 0 0 1.5rem 0;
         gap: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .Daftar{
-        justify-content: start;
+        justify-content: center;
     }
     .DaftarImam h1{
         font-size: 23px;
@@ -302,9 +327,7 @@
     .DaftarPengurus table tbody tr td:nth-child(2){
         width: 185px;
     }
-    .KomponenLaporan{
-        margin: 0.5rem 0;
-    }
+    
     .CardAcara{
         width: 300px;
     }
@@ -314,7 +337,7 @@
     }
 }
 
-@media (max-width:428px) {
+@media (max-width:700px) {
     .InfoMasjid{
         margin: 0.5rem 2rem;
     }
@@ -335,7 +358,7 @@
         border-radius: 40px;
     }
     .Petugas{
-        width: 300px;
+        width: 365px;
         gap: 1.8rem;
         align-items: start;
     }
@@ -357,6 +380,12 @@
     }
     .HeadingImam{
         font-size: 18px;
+    }
+}
+@media (max-width:400px) {
+    .Petugas{
+        width: 310px;
+        justify-content: center;
     }
 }
 @media (max-width:350px) {
