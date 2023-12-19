@@ -69,37 +69,37 @@ const TentangKami = () => {
         <h1 className={styles.HeadingTimKami}>Tim Kami</h1>
         <div className={styles.section}>
             <div className={styles.box}>
-                <img src="src/assets/ImageTim/Muzaki.png" alt="Hustler"/>
+                <img src="/src/assets/ImageTim/Muzaki.png" alt="Hustler"/>
                 <h3>Muzaki Abdullah Irsyad</h3>
                 <h5>Hustler</h5>
             </div>
             <div className={styles.box}>
-                <img src="src/assets/ImageTim/Amar.jpg" alt="Hacker"/>
+                <img src="/src/assets/ImageTim/Amar.jpg" alt="Hacker"/>
                 <h3>Muhammad Amar Dafi</h3>
                 <h5>Hacker</h5>
             </div>
             <div className={styles.box}>
-                <img src="src/assets/ImageTim/Jundi.png" alt="Hacker"/>
+                <img src="/src/assets/ImageTim/Jundi.png" alt="Hacker"/>
                 <h3>Muhammad Jundi Fatih</h3>
                 <h5>Hacker</h5>
             </div>
             <div className={styles.box}>
-                <img src="src/assets/ImageTim/Zaki.jpg" alt="Hipster"/>
+                <img src="/src/assets/ImageTim/Zaki.jpg" alt="Hipster"/>
                 <h3>Muhammad Zaki Ridhwan</h3>
                 <h5>Hipster</h5>
             </div>
             <div className={styles.box}>
-                <img src="src/assets/ImageTim/Budiman.png" alt="Hipster"/>
+                <img src="/src/assets/ImageTim/Budiman.png" alt="Hipster"/>
                 <h3>Budiman Cahyadi</h3>
                 <h5>Hispter</h5>
             </div>
             <div className={styles.box}>
-                <img src="src/assets/ImageTim/Rahmiyati.jpg" alt="Hipster"/>
+                <img src="/src/assets/ImageTim/Rahmiyati.jpg" alt="Hipster"/>
                 <h3>Rahmiyati</h3>
                 <h5>Hispter</h5>
             </div>
             <div className={styles.box}>
-                <img src="src/assets/ImageTim/Ardhina.jpg" alt="Hipster"/>
+                <img src="/src/assets/ImageTim/Ardhina.jpg" alt="Hipster"/>
                 <h3>Ardhina Septiani</h3>
                 <h5>Hispter</h5>
             </div>

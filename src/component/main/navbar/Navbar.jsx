@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <div className={styles.Navbar}>
       <div className={styles.Logo}>
-        <img src="src/assets/Logo-Amana.png" alt="Logo Amana" />
+        <img src="/src/assets/Logo-Amana.png" alt="Logo Amana" />
         <span>
           <h1>Amana</h1>
         </span>

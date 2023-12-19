@@ -69,7 +69,7 @@ const LandingPage = () => {
                     <button className={styles.Tombol}>Masuk</button>
                   </Link>
                 </div>
-                <img src="src/assets/MasjidJumbroton.png" alt="Foto Masjid" className={styles.Masjid}/>
+                <img src="/src/assets/MasjidJumbroton.png" alt="Foto Masjid" className={styles.Masjid}/>
             </div>
         </div>
         {/* End Jumbroton */}

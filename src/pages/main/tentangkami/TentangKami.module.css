@@ -55,13 +55,14 @@
     margin-bottom: 1.5rem;
 }
 .section::-webkit-scrollbar{
-    height: 4px;
-    border-radius: 10px;
+    height: 10px;
     background: transparent;
 
 }
 .section::-webkit-scrollbar-thumb{
     background:white;
+    border-radius: 5px;
+    cursor: pointer;
 }
 .section{
     display: flex;
