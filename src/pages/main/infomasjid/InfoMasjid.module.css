@@ -1,3 +1,27 @@
+@media (min-width:1380px) {
+    .ChannelMasjid{
+        position: inherit !important;
+        margin-left: inherit !important;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        color: #334C8A;
+        display: flex;
+        justify-content:start;
+    }
+    .ChannelMasjid h1{
+        font-size: 40px;
+        color: #334C8A;
+    }
+    .Petugas{
+        position: inherit !important;
+        margin: 0 0 1.5rem 0;
+        width: 960px;
+        gap: 4rem;
+    }
+    .KomponenLaporan{
+        justify-content: inherit !important;
+    }
+}
 .InfoMasjid{
     margin: 1rem;
 }
@@ -9,7 +33,7 @@
     border-radius: 20px;
 }
 .ChannelMasjid{
-    margin-left: 2rem;
+    margin-left: 8.5rem;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -38,13 +62,13 @@
     gap: 2rem;
     position: absolute;
     bottom: 0rem;
-    left:4rem;
+    left:9.5rem;
     color: white;
     background-color: #334C8A;
     width: 1050px;
     padding: 2rem 2rem;
     border-radius: 20px;
-    
+    justify-content: center;
 }
 
 .PetugasKiri h1{
@@ -99,7 +123,6 @@
 }
 .Laporan{
     margin-top: 1rem;
-    /* margin-left: 2rem; */
 }
 .KomponenLaporan{
     margin-top:0.5rem;
@@ -107,10 +130,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    justify-content: start;
+    justify-content: center;
 }
 .CardLaporan{
-    width: 285px;
+    width: 315px;
     padding: 1rem;
     background: white;
     filter: drop-shadow(rgb(165, 168, 167) 0 1mm 5px);
@@ -196,7 +219,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: start;
+    justify-content: center;
 }
 .CardAcara{
     width: 415px;
@@ -235,20 +258,23 @@
     font-weight: bold;
     opacity: 0.50;
 }
-@media (max-width:1300px) {
+@media (max-width:1200px) {
     .ChannelMasjid{
         position: inherit !important;
         margin: 1.5rem 0 0.5rem 0;
         color: #334C8A;
+        display: flex;
+        justify-content: center;
     }
     .ChannelMasjid h1{
         font-size: 40px;
     }
     .Petugas{
         position: inherit !important;
-        margin: 0 0 1.5rem 0;
         width: 960px;
         gap: 4rem;
+        display: flex;
+        justify-content: center;
     }
     .PetugasKiri h1{
         font-size: 25px;
@@ -284,10 +310,9 @@
     }
     .HeadingAcara4{
         text-align: center;
+        margin-top: 2rem;
     }
-    .KomponenAcara{
-        justify-content: center;
-    }
+    
     .KomponenLaporan{
         margin: 0.5rem 0;
         justify-content: center;
@@ -326,6 +351,9 @@
     }
     .DaftarPengurus table tbody tr td:nth-child(2){
         width: 185px;
+    }
+    .KomponenAcara{
+        justify-content: center;
     }
     
     .CardAcara{
@@ -381,11 +409,17 @@
     .HeadingImam{
         font-size: 18px;
     }
+    
+}
+@media (max-width:428px) {
+    .Petugas{
+        width: 330px;
+        justify-content: center;
+    }
 }
 @media (max-width:400px) {
     .Petugas{
-        width: 310px;
-        justify-content: center;
+        width: 300px;
     }
 }
 @media (max-width:350px) {

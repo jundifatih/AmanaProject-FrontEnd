@@ -39,6 +39,9 @@ body {
 .Links a:hover {
   color: #334c8a;
 }
+.Links a:active {
+  color: #334c8a;
+}
 .Links .SearchArea1{
   display: none;
 }
