@@ -5,7 +5,7 @@ import Profile from "../../../assets/Profile.svg";
 import { Chevy } from "../../../assets/icons/Chevron";
 import Bars from "../../../assets/icons/Bars";
 
-const Navbar = () => {
+const Navbar = ({ takmir }) => {
   const [display, setDisplay] = useState("");
   const [windowSize, setWindowSize] = useState(window.innerWidth);
 
@@ -36,9 +36,13 @@ const Navbar = () => {
       </div>
       {(display == "desktop" || display == "tablet") && (
         <div className={styles.User}>
-          <img src={Profile} alt="" />
+          <img
+            src={`http://localhost:3000/${takmir?.pic}`}
+            style={{ width: "3.5rem", borderRadius: "99rem" }}
+            alt=""
+          />
           <>
-            Budiman Cahyadi
+            {takmir?.name}
             <Chevy />
           </>
         </div>

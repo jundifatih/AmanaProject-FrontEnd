@@ -11,7 +11,7 @@ import FourPeople from "../../../assets/icons/FourPeople";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Dashboard from "../../../assets/icons/Dashboard";
 
-const Sidebar = () => {
+const Sidebar = ({ takmir, mosque }) => {
   const pathname = useLocation().pathname;
   const navigate = useNavigate();
   const handleLogout = () => {
@@ -22,10 +22,14 @@ const Sidebar = () => {
   return (
     <aside className={`col-2 ${styles.Aside}`}>
       <div className={styles.User}>
-        <img src={Profile} alt="" />
+        <img
+          src={`http://localhost:3000/${takmir?.pic}`}
+          alt=""
+          style={{ width: "3.5rem", borderRadius: "99rem" }}
+        />
         <div>
-          <h4>Masjid Al Ikhlas</h4>
-          <small>Budiman Cahyadi</small>
+          <h4>{mosque?.name}</h4>
+          <small>{takmir?.name}</small>
         </div>
       </div>
 
@@ -102,7 +106,7 @@ const Sidebar = () => {
           }
         >
           <FourPeople />
-          Pengurus Masjid
+          List Imam
         </Link>
 
         <div className={`${styles.NavItem} ${styles.NavHead}`}>

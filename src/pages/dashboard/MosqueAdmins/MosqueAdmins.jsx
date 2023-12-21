@@ -8,12 +8,12 @@ const MosqueAdmins = () => {
   return (
     <main className={`col-10 ${styles.Main}`}>
       <Link to="/dasbor" className={`${styles.Breadcrumb}`}>
-        Pengurus Masjid
+        Daftar Imam
       </Link>
       <div className={`${styles.Row}`}>
         <div className={`col-12 ${styles.Container}`}>
           <div className={`${styles.Row} ${styles.Header}`}>
-            Daftar Pengurus Masjid
+            Daftar Imam
             <button>tambah pengurus</button>
           </div>
           <div className={`${styles.Row} ${styles.Body}`}>
@@ -28,10 +28,9 @@ const MosqueAdmins = () => {
               <div className={`col-8 ${styles.CardBody}`}>
                 <div className={` ${styles.CardItem}`}>
                   <h3>Budiman Cahyadi</h3>
-                  <small>administrator web | 085777227772</small>
+                  <small> 085777227772</small>
                 </div>
                 <div className={`${styles.Row} ${styles.Buttons}`}>
-                  <button className={`${styles.Success}`}>Lihat</button>
                   <button className={`${styles.Primary}`}>Edit</button>
                   <button className={`${styles.Danger}`}>Hapus</button>
                 </div>
@@ -48,10 +47,9 @@ const MosqueAdmins = () => {
               <div className={`col-8 ${styles.CardBody}`}>
                 <div className={`${styles.CardItem}`}>
                   <h3>Muhammad Jundi Fatih</h3>
-                  <small>bendahara | 0812345678</small>
+                  <small> 0812345678</small>
                 </div>
                 <div className={`${styles.Row} ${styles.Buttons}`}>
-                  <button className={`${styles.Success}`}>Lihat</button>
                   <button className={`${styles.Primary}`}>Edit</button>
                   <button className={`${styles.Danger}`}>Hapus</button>
                 </div>
