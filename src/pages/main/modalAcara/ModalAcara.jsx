@@ -44,7 +44,7 @@ const ModalAcara = () => {
                     <div className="form-group row">
                         <label className="col-4 col-form-label">Pilih Jam</label> 
                         <div className="col-8">
-                        <input id="tanggal" name="tanggal" type="time" className="form-control" required="required"/>
+                        <input id="jam" name="tanggal" type="time" className="form-control" required="required"/>
                         </div>
                     </div>
                     <div className="form-group row">
@@ -53,6 +53,29 @@ const ModalAcara = () => {
                         <input id="deskripsi" name="deskripsi" type="text" className="form-control" required="required"/>
                         </div>
                     </div> 
+                    <div className="form-group row">
+                        <label className="col-4 col-form-label">Nama Lengkap Imam</label> 
+                        <div className="col-8">
+                        <input id="imam" name="imam" type="text" required="required" className="form-control"/>
+                        </div>
+                    </div>
+                    <div className="form-group row">
+                        <label className="col-4 col-form-label">Nomor Telepon</label> 
+                        <div className="col-8">
+                        <input id="telepon" name="telepon" type="text" required="required" className="form-control"/>
+                        </div>
+                    </div>
+                    <div className="form-group row">
+                        <label className="col-4 col-form-label">Foto Profil</label> 
+                        <div className="col-8">
+                        <input id="profilimam" name="profilimam" type="file" accept=".png,.jpg" required="required" className="form-control"/>
+                        </div>
+                    </div> 
+                    <div className="form-group row">
+                    <div className="offset-4 col-8">
+                    <button name="submit" type="submit" className="btn btn-primary">Submit</button>
+                    </div>
+                    </div>
             </form>
                 </div>
                 <div className="modal-footer">
