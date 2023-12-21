@@ -24,6 +24,12 @@ const ModalAcara = () => {
                         </div>
                     </div>
                     <div className="form-group row">
+                        <label className="col-4 col-form-label">Poster</label> 
+                        <div className="col-8">
+                        <input id="poster" name="poster" type="file" accept=".png,.jpg" className="form-control" required="required"/>
+                        </div>
+                    </div>
+                    <div className="form-group row">
                         <label className="col-4 col-form-label">Tagline</label> 
                         <div className="col-8">
                         <input id="tagline" name="tagline" type="text" className="form-control" required="required"/>
@@ -32,19 +38,19 @@ const ModalAcara = () => {
                     <div className="form-group row">
                         <label className="col-4 col-form-label">Pilih Tanggal</label> 
                         <div className="col-8">
-                        <input id="tanggal" name="tanggal" type="date" className="form-control"/>
+                        <input id="tanggal" name="tanggal" type="date" className="form-control" required="required"/>
                         </div>
                     </div>
                     <div className="form-group row">
                         <label className="col-4 col-form-label">Pilih Jam</label> 
                         <div className="col-8">
-                        <input id="tanggal" name="tanggal" type="time" className="form-control"/>
+                        <input id="tanggal" name="tanggal" type="time" className="form-control" required="required"/>
                         </div>
                     </div>
                     <div className="form-group row">
                         <label className="col-4 col-form-label">Deskripsi</label> 
                         <div className="col-8">
-                        <input id="deskripsi" name="deskripsi" type="text" className="form-control"/>
+                        <input id="deskripsi" name="deskripsi" type="text" className="form-control" required="required"/>
                         </div>
                     </div> 
             </form>
