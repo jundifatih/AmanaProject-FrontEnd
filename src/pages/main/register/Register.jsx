@@ -1,11 +1,16 @@
 import { Link, useNavigate } from "react-router-dom";
 import styles from "./Register.module.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useAuth } from "../../../lib/middleware/useAuth";
+import axios from "axios";
 
 const Register = () => {
   const navigate = useNavigate();
-
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [re_password, setRePassword] = useState("");
+  const [error, setError] = useState("");
   useEffect(() => {
     const checkAuth = async () => {
       const { isAuthenticated } = await useAuth();
@@ -17,6 +22,30 @@ const Register = () => {
 
     checkAuth();
   }, [navigate]);
+  const handleRegister = async (e) => {
+    e.preventDefault();
+    const API_ENDPOINT = `${import.meta.env.VITE_API_URL}/register`;
+    try {
+      console.log(username);
+      const response = await axios.post(API_ENDPOINT, {
+        username,
+        email,
+        password,
+        re_password,
+      });
+
+      navigate("/login");
+      console.log("register successful", response.data);
+    } catch (error) {
+      console.error("Error during login", error);
+      if (error.response) {
+        console.error("Response status", error.response.status);
+        console.error("Response data", error.response.data);
+      }
+      setError(error.response.data.error);
+    }
+  };
+
   return (
     <div className={styles.Container}>
       <div className={styles.Kiri}>
@@ -26,22 +55,37 @@ const Register = () => {
       </div>
       <div className={styles.Kanan}>
         <h1>Buat Akun</h1>
-        <div className={styles.KananForm}>
-          <label htmlFor="email">Nama Masjid</label>
-          <input type="email" placeholder="Masukan nama lengkap" required />
+        <form className={styles.KananForm} onSubmit={handleRegister}>
+          <label htmlFor="username">Nama Pengguna</label>
+          <input
+            onChange={(e) => setUsername(e.target.value)}
+            type="text"
+            placeholder="Masukan nama pengguna"
+            required
+          />
           <label htmlFor="email">Email</label>
-          <input type="email" placeholder="Masukan email" required />
+          <input
+            onChange={(e) => setEmail(e.target.value)}
+            type="email"
+            placeholder="Masukan email"
+            required
+          />
           <label htmlFor="password">Password</label>
-          <input type="password" placeholder="Masukan password" required />
-          <p>Atau gunakan akun</p>
-          <div className={styles.KananIcon}>
-            <i className="bi bi-facebook"></i>
-            <i className="bi bi-google"></i>
-            <i className="bi bi-twitter-x"></i>
-          </div>
-          <Link to="/login">
-            <button type="submit">Masuk</button>
-          </Link>
+          <input
+            onChange={(e) => setPassword(e.target.value)}
+            type="password"
+            placeholder="Masukan password"
+            required
+          />
+          <label htmlFor="re_password">Ulangi Password</label>
+          <input
+            onChange={(e) => setRePassword(e.target.value)}
+            type="password"
+            placeholder="Masukan password"
+            required
+          />
+
+          <button type="submit">Daftar</button>
           <p>
             Dengan masuk kamu menyetujui <span>Syarat & Ketentuan</span> dan{" "}
             <span>Kebijakan Privasi</span> Amana
@@ -52,7 +96,7 @@ const Register = () => {
               <Link to="/login">Masuk</Link>
             </span>
           </p>
-        </div>
+        </form>
       </div>
     </div>
   );

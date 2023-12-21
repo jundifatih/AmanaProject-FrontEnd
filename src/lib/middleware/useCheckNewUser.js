@@ -1,14 +1,10 @@
 import axios from "axios";
 
-export const useAuth = async () => {
+export const useCheckNewUser = async () => {
   const token = localStorage.getItem("Authorization");
-  let isAuthenticated = false;
-  if (!token) {
-    return { isAuthenticated: false };
-  }
+  let isNewUser = true;
 
-  const API_ENDPOINT = `${import.meta.env.VITE_API_URL}/protected/check-login`;
-
+  const API_ENDPOINT = `${import.meta.env.VITE_API_URL}/protected/mosque/check`;
   try {
     const response = await axios.post(
       API_ENDPOINT,
@@ -19,16 +15,15 @@ export const useAuth = async () => {
         },
       }
     );
-
-    isAuthenticated = true;
+    isNewUser = false;
   } catch (error) {
     console.error("Error during login", error);
     if (error.response) {
       console.error("Response status", error.response.status);
       console.error("Response data", error.response.data);
     }
-    isAuthenticated = false;
+    isNewUser = true;
   }
 
-  return { isAuthenticated };
+  return { isNewUser };
 };

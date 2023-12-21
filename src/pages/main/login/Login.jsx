@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { useAuth } from "../../../lib/middleware/useAuth";
 
 const Login = () => {
-  const [email, setEmail] = useState("");
+  const [credential, setCredential] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
@@ -27,7 +27,7 @@ const Login = () => {
     const API_ENDPOINT = `${import.meta.env.VITE_API_URL}/login`;
     try {
       const response = await axios.post(API_ENDPOINT, {
-        email,
+        credential,
         password,
       });
       const { token } = response.data;
@@ -56,12 +56,12 @@ const Login = () => {
         <h1>Masuk</h1>
         <form className={styles.KananForm} onSubmit={handleLogin}>
           <small>{error}</small>
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">Username atau Email</label>
           <input
-            type="email"
-            placeholder="Masukan email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            type="text"
+            placeholder="Masukan Username atau Email"
+            value={credential}
+            onChange={(e) => setCredential(e.target.value)}
             required
           />
           <label htmlFor="password">Password</label>
@@ -72,12 +72,6 @@ const Login = () => {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-          <p>Atau masuk dengan</p>
-          <div className={styles.KananIcon}>
-            <i className="bi bi-facebook"></i>
-            <i className="bi bi-google"></i>
-            <i className="bi bi-twitter-x"></i>
-          </div>
           <button type="submit">Masuk</button>
           <p>
             Dengan masuk kamu menyetujui <span>Syarat & Ketentuan</span> dan{" "}

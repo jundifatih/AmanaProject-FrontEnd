@@ -16,24 +16,24 @@ const mainRouter = {
     },
     {
       path: "berita",
-      element: <Berita/>
-     },
+      element: <Berita />,
+    },
     {
       path: "acara",
-      element: <Acara/>
-     },
+      element: <Acara />,
+    },
     {
       path: "tentangkami",
-      element: <TentangKami/>,
-     },
+      element: <TentangKami />,
+    },
     {
       path: "infomasjid",
-      element: <InfoMasjid/>,
-     },
-     {
+      element: <InfoMasjid />,
+    },
+    {
       path: "detailacara",
-      element : <DetailAcara/>,
-     },
+      element: <DetailAcara />,
+    },
   ],
 };
 
