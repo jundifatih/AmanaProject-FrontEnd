@@ -1,248 +1,243 @@
-.Acara{
-    margin: 0rem;
-    padding: 1rem;
+.Acara {
+  margin: 0rem;
+  padding: 1rem;
 }
-.JumbrotonAcara{
-    display: flex;
-    align-items: center;
-    background-color: #334c8a;
-    border-radius: 20px;
-    justify-content: center;
-    color: white;
-    padding: 2rem 5rem;
-    gap: 5rem;
-    margin-bottom: 1rem;
+.JumbrotonAcara {
+  display: flex;
+  align-items: center;
+  background-color: #334c8a;
+  border-radius: 20px;
+  justify-content: center;
+  color: white;
+  padding: 2rem 5rem;
+  gap: 5rem;
+  margin-bottom: 1rem;
 }
 
-.JumbotonKanan h1{
-    font-size: 60px;
-    font-weight: bold;
+.JumbotonKanan h1 {
+  font-size: 60px;
+  font-weight: bold;
 }
-.JumbotonKanan p{
-    font-size: 18px;
-    font-weight: 500;
+.JumbotonKanan p {
+  font-size: 18px;
+  font-weight: 500;
 }
-.SearchAcara{
-    position: absolute;
-    left: 20%;
-    bottom: 5%;
-    border-radius: 20px;
-    width: 850px;
-    height: 100px;
-    background: white;
-    border:1px solid #334c8a;
-    border: 20px;
-    filter: drop-shadow(rgb(165, 168, 167) 0 1mm 5px);
+.SearchAcara {
+  position: absolute;
+  bottom: 5%;
+  border-radius: 20px;
+  width: 850px;
+  height: 100px;
+  background: white;
+  border: 1px solid #334c8a;
+  border: 20px;
+  filter: drop-shadow(rgb(165, 168, 167) 0 1mm 5px);
 }
-.ContainerSearch{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
+.ContainerSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
 }
-.Search p{
-    font-size: 16px;
-    font-weight: 500;
-    color: #334c8a;
+.Search p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #334c8a;
 }
-.Search input{
-    border: none;
-    background: none;
-    border-bottom: 1px solid #334c8a ;
-    font-size: 22px;
-    font-weight: bold;
+.Search input {
+  border: none;
+  background: none;
+  border-bottom: 1px solid #334c8a;
+  font-size: 22px;
+  font-weight: bold;
 }
-.Search input::placeholder{
-    color: #334c8a;
+.Search input::placeholder {
+  color: #334c8a;
 }
-.Search input[type="date" ]{
-    color: #334c8a;
-    cursor: pointer;
+.Search input[type="date"] {
+  color: #334c8a;
+  cursor: pointer;
 }
-.Search input:focus{
-    outline: none;
-    color: #334c8a;
+.Search input:focus {
+  outline: none;
+  color: #334c8a;
 }
-.SearchAcara2{
-    display: none;
+.SearchAcara2 {
+  display: none;
 }
-.Judul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 3rem;
+.Judul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
 }
-.Judul h2{
-    color: #334c8a;
+.Judul h2 {
+  color: #334c8a;
 }
-.Judul button{
-    background-color: #334c8a;
-    color: white;
-    font-weight: 700;
-    border-radius: 20px;
-    border: none;
-    padding: 8px 10px;
-    cursor: pointer;
-    padding: 10px 20px;
+.Judul button {
+  background-color: #334c8a;
+  color: white;
+  font-weight: 700;
+  border-radius: 20px;
+  border: none;
+  padding: 8px 10px;
+  cursor: pointer;
+  padding: 10px 20px;
 }
-.KomponenAcara{
-    margin:1rem 0 ;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: space-between;
+.KomponenAcara {
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
 }
-.CardAcara{
-    width: 400px;
-    gap: 1rem;
-    border-radius: 18px;
-    background: white;
-    filter: drop-shadow(rgb(165, 168, 167) 0 1mm 5px);
+.CardAcara {
+  width: 400px;
+  gap: 1rem;
+  border-radius: 18px;
+  background: white;
+  filter: drop-shadow(rgb(165, 168, 167) 0 1mm 5px);
 }
-.CardAcara img{
-    width: 400px;
-    height: 215px;
-    max-width: 100%;
-    object-fit: cover;
-    border-radius: 18px;
-    background: none;
+.CardAcara img {
+  width: 400px;
+  height: 215px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+  background: none;
 }
-.DescAcara{
-    margin: 1rem;
-    display: flex;
-    gap: 0.5rem;
-    
+.DescAcara {
+  margin: 1rem;
+  display: flex;
+  gap: 0.5rem;
 }
-.Desc1{
-    color: #334c8a;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
+.Desc1 {
+  color: #334c8a;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
 }
-.Desc2 p:nth-child(1),p:nth-child(2){
-    margin-bottom: 0.3rem;
+.Desc2 p:nth-child(1),
+p:nth-child(2) {
+  margin-bottom: 0.3rem;
 }
-.Desc2 p:nth-child(1){
-    font-weight: bold;
+.Desc2 p:nth-child(1) {
+  font-weight: bold;
 }
-.Desc2 p:nth-child(2){
-    font-weight: bold;
-    opacity: 0.50;
+.Desc2 p:nth-child(2) {
+  font-weight: bold;
+  opacity: 0.5;
 }
 
 /* Pra-Large Screen */
 @media (max-width: 1300px) {
-    .SearchAcara{
-        position: inherit !important;
-        width: 950px;
-        margin-bottom: 1.5rem;
-    }
+  .SearchAcara {
+    position: inherit !important;
+    width: 950px;
+    margin-bottom: 1.5rem;
+  }
 }
 
 /* Tablet Screen / Medium */
-@media (max-width:830px) {
-    
-    .JumbrotonAcara{
-        gap: 1rem;
-        padding: 2rem 1rem;
-    }
-    .JumbrotonKiri{
-        width: 350px;
-    }
-    .JumbrotonKiri img{
-        width: 350px;
-        height: 350px;
-        max-width: 100%;
-    }
-    .JumbotonKanan{
-        width: 350px;
-    }
-    .JumbotonKanan h1{
-        font-size: 30px;
-        font-weight: bold;
-    }
-    .JumbotonKanan p{
-        font-size: 15px;
-        font-weight: 500;
-    }
-    .SearchAcara{
-        position: inherit !important;
-        width: 700px;
-        margin-bottom: 1.5rem;
-    }
-    .Search p{
-        font-size: 11px;
-        
-    }
-    .Search input{
-        font-size: 18px;
-    }
-    .CardAcara{
-        width: 300px;
-    }
-    .CardAcara img{
-        width: 300px;
-        height: 200px;
-        /* max-width: 100%;
+@media (max-width: 830px) {
+  .JumbrotonAcara {
+    gap: 1rem;
+    padding: 2rem 1rem;
+  }
+  .JumbrotonKiri {
+    width: 350px;
+  }
+  .JumbrotonKiri img {
+    width: 350px;
+    height: 350px;
+    max-width: 100%;
+  }
+  .JumbotonKanan {
+    width: 350px;
+  }
+  .JumbotonKanan h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .JumbotonKanan p {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .SearchAcara {
+    position: inherit !important;
+    width: 700px;
+    margin-bottom: 1.5rem;
+  }
+  .Search p {
+    font-size: 11px;
+  }
+  .Search input {
+    font-size: 18px;
+  }
+  .CardAcara {
+    width: 300px;
+  }
+  .CardAcara img {
+    width: 300px;
+    height: 200px;
+    /* max-width: 100%;
         background-size:cover;
         border-radius: 18px;
         background: none; */
-    }
-    .KomponenAcara{
-        justify-content: center;
-    }
+  }
+  .KomponenAcara {
+    justify-content: center;
+  }
 }
 
 /* Small Screen */
-@media (max-width:428px) {
-    .SearchAcara{
-        width: 300px;
-        height: auto;
-        margin-left: 1.8rem;
-    }
-    .ContainerSearch{
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-    }
-    .Search p{
-        font-size: 11px;
-        
-    }
-    .Search input{
-        font-size: 15px;
-        width: 260px
-    }
+@media (max-width: 428px) {
+  .SearchAcara {
+    width: 300px;
+    height: auto;
+    margin-left: 1.8rem;
+  }
+  .ContainerSearch {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .Search p {
+    font-size: 11px;
+  }
+  .Search input {
+    font-size: 15px;
+    width: 260px;
+  }
 }
-@media (max-width:400px) {
-    .JumbotonKanan h1{
-        font-size: 30px;
-        font-weight: bold;
-    }
-    .JumbotonKanan p{
-        font-size: 15px;
-        font-weight: 500;
-    }
-    .SearchAcara{
-        position: inherit !important;
-        width: 300px;
-        height: auto;
-        margin-bottom: 1.5rem;
-        padding: 0;
-        margin-left: 0;
-    }
-    .ContainerSearch{
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-    }
-    .Search p{
-        font-size: 11px;
-        
-    }
-    .Search input{
-        font-size: 15px;
-        width: 260px
-    }
+@media (max-width: 400px) {
+  .JumbotonKanan h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .JumbotonKanan p {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .SearchAcara {
+    position: inherit !important;
+    width: 300px;
+    height: auto;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    margin-left: 0;
+  }
+  .ContainerSearch {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .Search p {
+    font-size: 11px;
+  }
+  .Search input {
+    font-size: 15px;
+    width: 260px;
+  }
 }

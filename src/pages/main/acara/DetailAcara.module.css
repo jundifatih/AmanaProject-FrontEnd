@@ -1,68 +1,67 @@
-.DetailAcara{
-    margin: 2rem;
+.DetailAcara {
+  margin: 2rem;
+  display: flex;
+  align-items: start;
+  gap: 2rem;
+  justify-content: start;
+}
+.ImageAcara img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.profil {
+  display: flex;
+  gap: 0.7rem;
+  align-items: end;
+  margin: 1rem 0;
+}
+.FotoProfil {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.masjid {
+  font-size: 18px;
+  font-weight: bold;
+  color: #334c8a;
+}
+.headlineacara {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-bottom: 1.3rem;
+}
+.heading {
+  font-size: 23px;
+  font-weight: bold;
+  color: black;
+}
+.tagline {
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0.6;
+  color: black;
+}
+.tanggal span {
+  background-color: #334c8a;
+  padding: 5px;
+  color: white;
+  border-radius: 3px;
+  font-weight: bold;
+}
+@media (max-width: 650px) {
+  .DetailAcara {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 350px) {
+  .tanggal {
     display: flex;
-    align-items: start;
-    gap: 2rem;
-    justify-content: center;
-}
-.ImageAcara img{
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-.profil{
-    display: flex;
-    gap: 0.7rem;
-    align-items: end;
-    margin: 1rem 0;
-}
-.FotoProfil{
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-.masjid{
-    font-size: 18px;
-    font-weight: bold;
-    color: #334C8A;
-}
-.headlineacara{
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-    margin-bottom: 1.3rem;
-}
-.heading{
-    font-size: 23px;
-    font-weight: bold;
-    color: black;
-}
-.tagline{
-    font-size: 16px;
-    font-weight: bold;
-    opacity: 0.60;
-    color: black;
-}
-.tanggal span{
-    background-color: #334C8A;
-    padding: 5px;
-    color: white;
-    border-radius: 3px;
-    font-weight: bold;
-}
-@media (max-width:650px) {
-    .DetailAcara{
-        gap: 1rem;
-        flex-wrap: wrap;
-    }
-    
-}
-@media (max-width:350px) {
-    .tanggal{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 5px;
-    }
+    flex-wrap: wrap;
+    gap: 5px;
+  }
 }

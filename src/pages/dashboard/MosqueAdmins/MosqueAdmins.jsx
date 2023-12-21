@@ -16,46 +16,7 @@ const MosqueAdmins = () => {
             Daftar Imam
             <button>tambah pengurus</button>
           </div>
-          <div className={`${styles.Row} ${styles.Body}`}>
-            <div className={`col-5 ${styles.Card}`}>
-              <div className={`col-4 ${styles.CardBanner}`}>
-                <img
-                  src={Image}
-                  className={`${styles.Img}`}
-                  alt="Banner acara"
-                />
-              </div>
-              <div className={`col-8 ${styles.CardBody}`}>
-                <div className={` ${styles.CardItem}`}>
-                  <h3>Budiman Cahyadi</h3>
-                  <small> 085777227772</small>
-                </div>
-                <div className={`${styles.Row} ${styles.Buttons}`}>
-                  <button className={`${styles.Primary}`}>Edit</button>
-                  <button className={`${styles.Danger}`}>Hapus</button>
-                </div>
-              </div>
-            </div>
-            <div className={`col-5 ${styles.Card}`}>
-              <div className={`col-4 ${styles.CardBanner}`}>
-                <img
-                  src={Image2}
-                  className={`${styles.Img}`}
-                  alt="Banner acara"
-                />
-              </div>
-              <div className={`col-8 ${styles.CardBody}`}>
-                <div className={`${styles.CardItem}`}>
-                  <h3>Muhammad Jundi Fatih</h3>
-                  <small> 0812345678</small>
-                </div>
-                <div className={`${styles.Row} ${styles.Buttons}`}>
-                  <button className={`${styles.Primary}`}>Edit</button>
-                  <button className={`${styles.Danger}`}>Hapus</button>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div className={`${styles.Row} ${styles.Body}`}></div>
         </div>
       </div>
     </main>

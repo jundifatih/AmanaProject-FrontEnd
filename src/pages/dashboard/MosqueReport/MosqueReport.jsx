@@ -15,16 +15,16 @@ const MosqueReport = () => {
           </div>
           <div className={`${styles.Row} ${styles.Body}`}>
             <div className={`${styles.Card}`}>
-              <h2>Rp 5.000.000</h2>
+              <h2>0</h2>
               Pemasukan
             </div>
             <div className={`${styles.Card}`}>
-              <h2>Rp 6.000.000</h2>Pengeluaran
+              <h2>0</h2>Pengeluaran
             </div>
             <div className={`${styles.Card}`}>
-              <h2>Rp 15.000.000</h2>Kas Saat ini
+              <h2>0</h2>Kas Saat ini
             </div>
-            <h2>Laporan Keunganan Masjid Al Ikhlas</h2>
+            <h2>Laporan Keuangan</h2>
             <table className="col-12">
               <thead>
                 <tr>

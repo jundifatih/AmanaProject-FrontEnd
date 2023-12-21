@@ -1,20 +1,20 @@
-import CardAcara from "./CardAcara"
-import DataAcaraMasjid from "../landingpage/DataAcaraMasjid"
-import styles from "./StyleAcara.module.css"
+import CardAcara from "./CardAcara";
+import DataAcaraMasjid from "../landingpage/DataAcaraMasjid";
+import styles from "./StyleAcara.module.css";
 
 const Acara = () => {
-const data = DataAcaraMasjid.map((item)=>{
-    return(
-    <CardAcara
-    key={item.poster}
-    poster={item.poster}
-    acara={item.acara}
-    masjid={item.masjid}
-    tanggalShort={item.tanggalShort}
-    tagline={item.tagline}
-    />
-    )
-    })
+  const data = DataAcaraMasjid.map((item) => {
+    return (
+      <CardAcara
+        key={item.poster}
+        poster={item.poster}
+        acara={item.acara}
+        masjid={item.masjid}
+        tanggalShort={item.tanggalShort}
+        tagline={item.tagline}
+      />
+    );
+  });
   return (
     <div className={styles.Acara}>
       <div className={styles.JumbrotonAcara}>
@@ -23,35 +23,47 @@ const data = DataAcaraMasjid.map((item)=>{
         </div>
         <div className={styles.JumbotonKanan}>
           <h1>Jelajahi agenda acara terkini.</h1>
-          <p>Temukan transformasi diri melalui acara islami untuk memperkaya pemahaman agama, dan menginspirasi tindakan
-          positif dalam setiap langkah hidup.</p>
+          <p>
+            Temukan transformasi diri melalui acara islami untuk memperkaya
+            pemahaman agama, dan menginspirasi tindakan positif dalam setiap
+            langkah hidup.
+          </p>
         </div>
       </div>
-      <div className={styles.SearchAcara}>
+      <div
+        className={styles.SearchAcara}
+        style={{
+          width: "70%",
+          margin: "auto",
+          height: "fit-content",
+          padding: "15px",
+          marginBottom: "3rem",
+          left: "15%",
+          right: "50%",
+        }}
+      >
         <div className={styles.ContainerSearch}>
           <div className={styles.Search}>
-            <p>Cari Acara</p> <br />
-            <input type="text" placeholder="Nama Acara"/>
+            <p>Cari Acara</p>
+            <input type="text" placeholder="Nama Acara" />
           </div>
           <div className={styles.Search}>
-            <p>Cari Lokasi</p> <br />
-            <input type="text" placeholder="Nama Lokasi"/>
+            <p>Cari Lokasi</p>
+            <input type="text" placeholder="Nama Lokasi" />
           </div>
           <div className={styles.Search}>
-            <p>Pilih Tanggal</p> <br />
-            <input type="date"/>
+            <p>Pilih Tanggal</p>
+            <input type="date" />
           </div>
         </div>
       </div>
       <div className={styles.Judul}>
-          <h2>Acara Mendatang</h2>
-          <button>Lainnya</button>
+        <h2>Acara Mendatang</h2>
+        <button>Lainnya</button>
       </div>
-      <div className={styles.KomponenAcara}>
-          {data}
-      </div>
+      <div className={styles.KomponenAcara}>{data}</div>
     </div>
-  )
-}
+  );
+};
 
-export default Acara
+export default Acara;

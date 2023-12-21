@@ -32,13 +32,13 @@ const mainRouter = {
       element: <InfoMasjid />,
     },
     {
-      path: "detailacara",
-      element : <DetailAcara/>,
-     },
-     {
-      path:"formAcara",
-      element: <ModalAcara/>
-     }
+      path: "detailacara/:id",
+      element: <DetailAcara />,
+    },
+    {
+      path: "formAcara",
+      element: <ModalAcara />,
+    },
   ],
 };
 

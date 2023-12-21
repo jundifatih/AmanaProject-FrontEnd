@@ -1,10 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import styles from "./MosqueProfile.module.css";
-import Profile from "/src/assets/ImageMasjid/Al-Ikhlas2.jpg";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import axios from "axios";
 
 const MosqueProfile = () => {
+  const { id } = useParams();
+  const [mosque, setMosque] = useState("");
+  const [takmir, setTakmir] = useState("");
+  const getMosque = async () => {
+    const API_ENDPOINT = `${import.meta.env.VITE_API_URL}/mosque/${id}`;
+    const response = await axios(API_ENDPOINT);
+    setMosque(response.data.data);
+  };
+  const getWebAdmin = async () => {
+    const token = localStorage.getItem("Authorization");
+    const API_ENDPOINT = `${
+      import.meta.env.VITE_API_URL
+    }/protected/takmir/webadmin`;
+    const response = await axios.get(API_ENDPOINT, {
+      headers: {
+        Authorization: `${token}`,
+      },
+    });
+    setMosque(response.data?.mosque);
+    setTakmir(response.data?.takmir);
+  };
+
+  useEffect(() => {
+    getWebAdmin();
+  }, []);
   return (
     <main className={`col-10 ${styles.Main}`}>
       <div className={`col-4 ${styles.Card}`}>
@@ -12,17 +37,14 @@ const MosqueProfile = () => {
           {" "}
           <img
             className={`${styles.ProfilePic}`}
-            src={Profile}
+            src={`http://localhost:3000/${mosque?.pic}`}
             alt=""
             srcset=""
           />
           <small>
-            <strong>Masjid Al-Ikhlas</strong>
+            <strong>{mosque?.name}</strong>
           </small>
-          <small>
-            Jl. Bojong Pd. Terong No.105, Bojong Pd. Terong, Kec. Cipayung, Kota
-            Depok, Jawa Barat 16436
-          </small>
+          <small>{mosque?.address}</small>
         </div>
       </div>
       <div className={`col-8 ${styles.Card}`}>
@@ -40,38 +62,35 @@ const MosqueProfile = () => {
           <h3>Informasi Umum</h3>
           <div className={`${styles.Row}`}>
             <div className={`col-4`}>Nama</div>
-            <div className={`col-8`}>Masjid Al-Ikhlas</div>
+            <div className={`col-8`}>{mosque?.name}</div>
           </div>
           <div className={`${styles.Row}`}>
             <div className={`col-4`}>Alamat</div>
-            <div className={`col-8`}>
-              Jl. Bojong Pd. Terong No.105, Bojong Pd. Terong, Kec. Cipayung,
-              Kota Depok, Jawa Barat 16436
-            </div>
+            <div className={`col-8`}>{mosque?.address}</div>
           </div>
           <div className={`${styles.Row}`}>
             <div className={`col-4`}>Latitude & Longitude</div>
             <div className={`col-8`}>
-              -6.426713330984473, 106.80632012479394
+              {mosque?.latitude}, {mosque?.longitude}
             </div>
           </div>
           <div className={`${styles.Row}`}>
             <div className={`col-4`}>Telepon</div>
-            <div className={`col-8`}>0812 8543 7226</div>
+            <div className={`col-8`}>{mosque?.phone}</div>
           </div>
           <hr style={{ margin: "1rem 0rem" }} />
           <h3>Informasi Kepengurusan</h3>
           <div className={`${styles.Row}`}>
             <div className={`col-4`}>Ketua DKM</div>
-            <div className={`col-8`}>Muzaki Abdullah Irsyad</div>
+            <div className={`col-8`}>-</div>
           </div>
           <div className={`${styles.Row}`}>
             <div className={`col-4`}>Bendahara</div>
-            <div className={`col-8`}>Muhammad Jundi Fatih</div>
+            <div className={`col-8`}>-</div>
           </div>
           <div className={`${styles.Row}`}>
             <div className={`col-4`}> Admin Website</div>
-            <div className={`col-8`}>Budiman Cahyadi</div>
+            <div className={`col-8`}>{takmir.name}</div>
           </div>
         </div>
         <div className={`${styles.CardFooter}`}>

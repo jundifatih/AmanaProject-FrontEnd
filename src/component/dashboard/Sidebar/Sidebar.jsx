@@ -53,7 +53,7 @@ const Sidebar = ({ takmir, mosque }) => {
           Masjid <Triangle />
         </div>
         <Link
-          to="profil-masjid"
+          to={`profil-masjid/${mosque?.id}`}
           className={`${styles.NavItem}`}
           style={
             pathname.includes("profil-masjid")
@@ -112,20 +112,7 @@ const Sidebar = ({ takmir, mosque }) => {
         <div className={`${styles.NavItem} ${styles.NavHead}`}>
           Pengguna <Triangle />
         </div>
-        <Link
-          to="profil-pengguna"
-          className={`${styles.NavItem}`}
-          style={
-            pathname.includes("profil-pengguna")
-              ? {
-                  fontWeight: "bolder",
-                }
-              : { fontWeight: "normal" }
-          }
-        >
-          <Person />
-          Profil Pengguna
-        </Link>
+
         <div onClick={handleLogout} className={`${styles.NavItem}`}>
           <Logout />
           Logout
