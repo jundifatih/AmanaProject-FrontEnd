@@ -4,6 +4,7 @@ import DetailAcara from "../../pages/main/acara/DetailAcara";
 import Berita from "../../pages/main/berita/Berita";
 import InfoMasjid from "../../pages/main/infomasjid/InfoMasjid";
 import LandingPage from "../../pages/main/landingpage/LandingPage";
+import ModalAcara from "../../pages/main/modalAcara/ModalAcara";
 import TentangKami from "../../pages/main/tentangkami/TentangKami";
 
 const mainRouter = {
@@ -34,6 +35,10 @@ const mainRouter = {
       path: "detailacara",
       element : <DetailAcara/>,
      },
+     {
+      path:"formAcara",
+      element: <ModalAcara/>
+     }
   ],
 };
 

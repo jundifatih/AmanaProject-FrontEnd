@@ -4,7 +4,7 @@ const DetailAcara = () => {
   return (
     <div className={styles.DetailAcara}>
         <div className={styles.ImageAcara}>
-            <img src="src/assets/ImageAcara/Maulidnabi.png" alt="poster" />
+            <img src="src/assets/ImageAcara/MaulidNabi.png" alt="poster" />
         </div>
         <div className={styles.DetailProfil}>
             <div className={styles.profil}>
